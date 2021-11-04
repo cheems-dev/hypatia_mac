@@ -1,4 +1,4 @@
-//Tema 12: isomofismo
+// Tema 10: 
 
 //For next imports
 import Head from 'next/head'
@@ -9,18 +9,18 @@ import Latex from 'react-latex-next';
 
 //Own imports
 import Layout  from '../components/layout';
-import styles from './tema12.module.css'
+import styles from './tema10.module.css';
 
 
 //Vars, functions and consts
 let expr1 = "$\\gamma_{1}^2 + x = y^2$" // Example
 
 
-const tema12 = () => {
+const tema10 = () => {
     return (
         <Layout>
             <Head>
-                <title>Hypatia - Tema 12</title>
+                <title>Hypatia - Tema 10</title>
             </Head>
             <div className="container mx-auto m-6 rounded-md shadow-xl">
 
@@ -32,4 +32,4 @@ const tema12 = () => {
     );
 }
 
-export default tema12;
+export default tema10;
