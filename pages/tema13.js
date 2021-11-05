@@ -87,6 +87,8 @@ const tema13 = () => {
                 <br/>
                 Veamos cómo podemos encontrar la matriz de cambio de base en un ejemplo en <Latex>{exp11}</Latex>.
                 <br/>
+                <Latex>{exp11}</Latex>
+                <br/>
                 <br/>
                 <br/>
                 <br/>
