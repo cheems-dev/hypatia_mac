@@ -14,7 +14,14 @@
 .defTitle {
     font-size: 17px;
     font-weight: bold;
-    color: #222729;
+    color: #292722;
+    font-family: 'Roboto Slab', serif;
+}
+
+.solTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e58a3;
     font-family: 'Roboto Slab', serif;
 }
 

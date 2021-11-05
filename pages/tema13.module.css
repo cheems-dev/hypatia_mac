@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Zen+Antique&display=swap');
+
+.titulo{
+    font-family: 'Zen Antique', serif;
+    font-size: 30px;
+}
+
+.subtitulo{
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+}
+
