@@ -3,10 +3,11 @@
 ---
 
 ## Menu
+- [Colaboradores](#Colaboradores)
 - [Pre-requisitos](#Pre-requisitos)
 - [Plugins-de-VsCode](#Plugins-de-VsCode)
 - [Construccion](#Construccion)
-- [Contribuidores](#Colaboradores)
+
 
 ## Pre-requisitos
 
