@@ -101,14 +101,13 @@ const tema13 = () => {
                     <Latex>{exp21}</Latex>
                     <Latex>{exp22}</Latex>
                 </p>
-                <p className={`leading-relaxed `+styles.parrafo}>                   
-                    De esta forma obtenemos:
-
-                </p>
-
+            <br/><br/>
             </div>
             <div className="container mx-auto m-6 rounded-md text-gray-500 text-xl">
-                Recurso: 
+                A continuación se visualiza una representación gráfica de un vector "v", en dos bases distintas.<br/><br/>
+                Indicaciones:<br/>
+                Para variar la base B2, pincha y mueve los vectores w_1 y w_2.<br/>
+                Para cambiar el vector v, pínchalo y muévelo en la base canónica.
                 <iframe scrolling="no" title="Cambio de Base" src="https://www.geogebra.org/material/iframe/id/XKsP7mA5/width/816/height/420/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="816px" height="420px"> </iframe>
             </div>
 
