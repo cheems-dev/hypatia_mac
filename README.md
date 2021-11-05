@@ -7,7 +7,7 @@
 - [Plugins de VsCode](#Plugins de VsCode)
 - [Instalación](#Instalación)
 
-## **Pre-requisitos 📋 **
+## Pre-requisitos 📋 
 
 [Git](https://git-scm.com/)
 
