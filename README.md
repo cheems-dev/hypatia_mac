@@ -1,4 +1,5 @@
-# <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/LOGO_UNSA.png" width="100px;" alt="Foto do Mark Zuckerberg"/><br>Transformación Lineal - Matematicas Aplicadas a la Computación
+<center> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/LOGO_UNSA.png" width="1000px;" alt="Foto do Mark Zuckerberg"/><br> </center>
+# Transformación Lineal - Matematicas Aplicadas a la Computación
 
 ---
 
