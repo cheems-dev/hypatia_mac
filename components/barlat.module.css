@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+.mainTitle{
+    font-size: 30px;
+    color: rgb(31, 97, 66);
+    font-style: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+.listContent {
+    list-style-position: inside;
+}
+
+.listContent > li{
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    list-style: auto;
+}
+
+.itemContent:hover{
+    color: royalblue;
+    border-right: 6px solid rgb(3, 168, 233);
+}

@@ -13,11 +13,21 @@ import styles from './tema12.module.css'
 
 
 //Vars, functions and consts
+
 let expr2 = "$\\mathbb{K}$"
 let expr3 = "$$dim_{\\mathbb{K}} U = dim_{\\mathbb{K}} V $$"
 let expr4 = "$T: M_2(\\mathbb{R}) \\rightarrow \\mathbb{R}^4$"
 let expr5 = "$$ T \\begin{pmatrix} a & b\\\\ c & d \\end{pmatrix} = (a , b, c, d)$$"
 let expr6 = "$M_2(\\mathbb{R}) \\cong \\mathbb{R}^4$"
+let expr7 = "$$ Ker(T) = \\left\\{ \\begin{pmatrix} a & b\\\\ c & d \\end{pmatrix} \\in M_2(\\mathbb{R}): T \\begin{pmatrix} a & b\\\\ c & d \\end{pmatrix} = (0,0,0,0) \\right\\} $$"
+let expr8 = "$$(a,b,c,d) = (0,0,0,0) \\Rightarrow a=b=c=d$$"
+let expr9 = "$$ \\therefore Ker(T) = \\left\\{ \\begin{pmatrix} 0 & 0\\\\ 0 & 0 \\end{pmatrix} \\right\\} \\Rightarrow T \\text{ es inyectiva.}$$"
+let expr10 = "$T: \\mathbb{R}^n \\rightarrow \\mathscr{P}_{n-1}(\\mathbb{R}) $ dada por $T(x_1, x_2, ..., x_n) = x_1 + x_2t + ... + x_n t^{n-1}$"
+let expr11 = "$T: M_{m x n} \\rightarrow \\mathbb{R}^mn$ que asocia a cada matriz $A = (a_{ij})$ de $M_{mxn}$ o el siguiente elemento de $\\mathbb{R}^n$"
+let expr12 = "$$(a_{11}, ..., a_{1n}, ..., a_{m1}, ..., a_{mn})$$"
+let expr13 = "$\\mathbb{R}^3$"
+let expr14 = "$$Ker(T) = \\left\\{ (x,y,z) \\in \\mathbb{R}^3 : T(x,y,z) = (0,0,0) \\right\\}\\\\ T(x,y,z) = (0,0,0) \\\\ (x-y, x-z, z-y) = (0,0,0) \\\\ \\left\\{\\begin{matrix} x-y=0 \\\\ x-z=0\\\\ z-y=0 \\end{matrix}\\right. \\\\ \\Rightarrow \\begin{pmatrix} 1 & -1 & 0\\\\ 1 & 0 & -1 \\\\ 0 & -1 & 1 \\end{pmatrix} \\begin{pmatrix} x\\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 0\\\\ 0 \\\\ 0 \\end{pmatrix} \\\\ \\Rightarrow \\text{Sist. Homogéneo con infinitas soluciones, } det(A) = 0$$"
+let expr15 = "$$\\Rightarrow y=x, z=x \\Rightarrow Ker(T) = \\left\\{ (x,x,x) : x \\in \\mathbb{R} \\right\\} \\\\ \\Rightarrow Ker(T) = [(1,1,1)] \\neq \\left\\{ (0,0,0) \\right\\} \\\\ \\Rightarrow T \\text{ no es inyectiva, por lo tanto no es automorfismo}$$"
 
 const tema12 = () => {
     return (
@@ -25,7 +35,7 @@ const tema12 = () => {
             <Head>
                 <title>Hypatia - Tema 12</title>
             </Head>
-            <div className="container px-8 mx-auto m-6 rounded-md shadow-xl">
+            <div className="container px-8 mx-auto m-6 rounded-md shadow-xl bg-white">
 
                 {/* AQUI VA SU CONTENIDO */}
                 <h1 className={`pb-4 `+ styles.mainTitle}>Isomorfismos</h1>
@@ -64,6 +74,10 @@ const tema12 = () => {
                     <li>
                         <p className={`leading-relaxed ` + styles.parrafo}>
                             <span className="italic">1. </span> T es inyectiva:
+
+                            <Latex>{expr7}</Latex>
+                            <Latex>{expr8}</Latex>
+                            <Latex>{expr9}</Latex>
                         </p>
                     </li>
                     <li>
@@ -74,8 +88,65 @@ const tema12 = () => {
                 </ul>
 
                 <p className={`leading-relaxed ` + styles.parrafo}>
-                    De <Latex>$(i)$ y $(ii)$ se tiene que $T$ es un isomorfismo</Latex>. Así <Latex>{expr6}</Latex> 
+                    De <Latex>$(i)$ y $(ii)$ se tiene que $T$ es un isomorfismo</Latex>. Así <Latex>{expr6}</Latex>
                 </p>
+
+                <h3 className={`pb-4 leading-relaxed `+ styles.defTitle}>Ejemplos:</h3>
+                <ul>
+                    <li>
+                        <p className={`leading-relaxed ` + styles.parrafo}>
+                            <span className="italic">1. </span> <Latex>$T: U \rightarrow U$ dada por $T(u)=u$</Latex>
+                        </p>
+
+                        <p className={`leading-relaxed ml-8 ` + styles.parrafo}>
+                            La transformación identidad es un isomorfismo.
+                        </p>
+                    </li>
+                    <li>
+                        <p className={`leading-relaxed ` + styles.parrafo}>
+                            <span className="italic">2. </span> <Latex>{expr10}</Latex>
+                        </p>
+
+                        <p className={`leading-relaxed ml-8 ` + styles.parrafo}>
+                            La transformación lineal es un isomorfismo.
+                        </p>
+                    </li>
+
+                    <li>
+                        <p className={`leading-relaxed ` + styles.parrafo}>
+                            <span className="italic">3. </span> <Latex>{expr11}</Latex>
+                            <Latex>{expr12}</Latex>
+                        </p>
+
+                        <p className={`leading-relaxed ml-8 ` + styles.parrafo}>
+                            La transformación lineal es un isomorfismo.
+                        </p>
+                    </li>
+                </ul>
+
+                <h3 className={`pb-4 leading-relaxed `+ styles.defTitle}>Nota:</h3>
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                    <Latex>Sea $T: U \rightarrow V$ un isomorfismo. Si $U=V$, entonces diremos que $T$ es un</Latex> <b>automorfismo</b>.
+                </p>
+
+                <h3 className={`pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo:</h3>
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                    Verifique que <Latex>$T(x,y,z) = (x-y, x-z, z-y)$ es un automorfismo de </Latex> <Latex>{expr13}</Latex>
+                </p>
+                <div className="ml-8 leading-relaxed">
+                    <h4 className={` `+styles.solTitle}>Solución: </h4>
+                    <ul>
+                        <li>
+                            <p className={`leading-relaxed ` + styles.parrafo}>
+                                <span className="italic">i. </span> <Latex>¿$T$ es inyectiva?</Latex> 
+                            </p>
+                            <p className={`leading-relaxed ` + styles.parrafo}>
+                                <Latex>{expr14}</Latex>
+                                <Latex>{expr15}</Latex>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
 
             </div>
         </Layout>        
