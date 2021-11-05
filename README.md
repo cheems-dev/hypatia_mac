@@ -2,6 +2,8 @@
 
 ---
 
+Interactua con nuestra app [Hypatia](https://hypatiamac.herokuapp.com/)
+
 ### **Pre-requisitos 📋**
 
 [Git](https://git-scm.com/)
