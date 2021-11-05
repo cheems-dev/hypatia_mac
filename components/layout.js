@@ -7,10 +7,10 @@ export default function Layout({ children }) {
         <div className={styles.container}>
             <Navbar/>
             <div className="grid grid-cols-12">
-                <div className="col-start-1 col-span-3">
+                <div className="col-start-2 col-span-3">
                     <Barlat/>
                 </div>
-                <div className="col-start-4 col-span-8">
+                <div className="col-start-5 col-span-7">
                     {children}
                 </div>
             </div>

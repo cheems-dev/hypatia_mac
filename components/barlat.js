@@ -4,7 +4,7 @@ import styles from './barlat.module.css'
 
 const Barlat = (props) => {
     return (
-        <div className="m-2 p-4 rounded-2xl shadow-2xl leading-10">
+        <div className="m-2 p-7 rounded-2xl shadow-2xl leading-10">
             <h1 className={`  ` + styles.mainTitle}>&#x2192; Contenido</h1>
             <p>Capítulo 2</p>
             <ul className={styles.listContent}>
