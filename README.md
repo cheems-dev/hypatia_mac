@@ -27,7 +27,7 @@
 
 [Container-Remote](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-### **Instalación 🔧**
+### **Instalación**
 
 1. Clonaremos el proyecto en tu entorno local
 
@@ -66,7 +66,7 @@
       npm install
       ```
 
-5. Por ultimo, lanzamos el proyecto en entorno local. **_Happy coding_** 🍻
+5. Por ultimo, lanzamos el proyecto en entorno local. **_Happy coding_**
 
    ```bash
    yarn dev
@@ -87,7 +87,7 @@
 - Joel Perca - _Proyect Management y desarrollo_ - [reqhiem](https://github.com/reqhiem)
 - Luis Ccalluchi - _Documentación y desarrollo_ - [cheems-dev](https://github.com/cheems-dev)
 
-## **Licencia 📄**
+## **Licencia**
 
 ---
 
