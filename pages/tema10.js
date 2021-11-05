@@ -21,11 +21,17 @@ const tema10 = () => {
         <h2 className='text-3xl font-bold'>Nucleo e Imagén</h2>
         <h3 className='text-red-600 py-5 text-lg font-bold'>Definición: </h3>
         Sean <Latex>{latexTemplate('U y V')}</Latex>
-        <br /> dos espacios vectoriales sobre{' '}
-        <Latex>{latexTemplate('k')}</Latex>. Si{' '}
+        dos espacios vectoriales sobre <Latex>{latexTemplate('k')}</Latex>. Si{' '}
         <Latex>{latexTemplate('{u_{1}, ... , u{n}}')}</Latex> es una base de{' '}
         <Latex>{latexTemplate('U')}</Latex> y si{' '}
-        <Latex>{latexTemplate('{v_{1}, ... , v{n}}')}</Latex>
+        <Latex>{latexTemplate('{v_{1}, ... , v{n}} \\subseteq V')}</Latex>,
+        entonces existe una única transformacion lineal:
+        <p className='text-center'>
+          <Latex>{latexTemplate('T:U\\rightarrow V')}</Latex>
+        </p>
+        tal que <Latex>{latexTemplate('T(U{i})=V{i}')}</Latex>, para{' '}
+        <Latex>{latexTemplate('i = 1 ... n')}</Latex>
+        {/*  <h3 className='text-red-600 py-5 text-lg font-bold'>Ejemplo 1: </h3>
         <ol className='ml-10 list-decimal'>
           <li>
             Si <Latex>{latexTemplate('X\\subset U')}</Latex>, define la imagen
@@ -41,7 +47,7 @@ const tema10 = () => {
               {latexTemplate(' (Y) = \\{u \\in U; T(u) \\in Y \\}')}
             </Latex>
           </li>
-        </ol>
+        </ol> */}
         <h3 className='text-red-600 py-5 text-lg font-bold'>Prueba: </h3>
         Sea <Latex>{latexTemplate('W')}</Latex> un subespacio vectorial de{' '}
         <Latex>{latexTemplate('U')}</Latex>
