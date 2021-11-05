@@ -1,20 +1,33 @@
-## Comenzando **🚀**
+# Transformación Lineal
 
 ---
 
-### **Pre-requisitos 📋**
+## Menu
+- [Colaboradores](#Colaboradores)
+- [Pre-requisitos](#Pre-requisitos)
+- [Plugins-de-VsCode](#Plugins-de-VsCode)
+- [Construccion](#Construccion)
+
+
+## Pre-requisitos
 
 [Git](https://git-scm.com/)
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="70px;" alt="Foto do Mark Zuckerberg"/><br>
+
 [Docker](https://www.docker.com/)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Docker_%28container_engine%29_logo.png" width="200px;" alt="Foto do Mark Zuckerberg"/><br>
 
 [VsCode](https://code.visualstudio.com/)
 
-### Plugins de VsCode 🤖
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="50px;" alt="Foto do Mark Zuckerberg"/><br>
+
+## Plugins-de-VsCode
 
 [Container-Remote](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-### **Instalación 🔧**
+### **Instalación**
 
 1. Clonaremos el proyecto en tu entorno local
 
@@ -53,28 +66,94 @@
       npm install
       ```
 
-5. Por ultimo, lanzamos el proyecto en entorno local. **_Happy coding_** 🍻
+5. Por ultimo, lanzamos el proyecto en entorno local. **_Happy coding_**
 
    ```bash
    yarn dev
    ```
 
-## **Construido con 🛠️**
+## **Construccion**
 
 ---
 
 - Next.js
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+
 - Tailwind
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" width="100px;" alt="Foto do Mark Zuckerberg"/><br>
+
 - Docker
 
-## **Autores ✒️**
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Docker_%28container_engine%29_logo.png" width="200px;" alt="Foto do Mark Zuckerberg"/><br>
+
+## **Colaboradores**
 
 ---
 
 - Joel Perca - _Proyect Management y desarrollo_ - [reqhiem](https://github.com/reqhiem)
 - Luis Ccalluchi - _Documentación y desarrollo_ - [cheems-dev](https://github.com/cheems-dev)
 
-## **Licencia 📄**
+
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="Yasmin"/><br>
+        <sub>
+          <b>Elizabeth Huanca Parqui</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/52427932?v=4" width="100px;" alt="Joel"/><br>
+        <sub>
+          <b>Joel Perca Quispe</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/38531618?v=4" width="100px;" alt="Luis1"/><br>
+        <sub>
+          <b>Luis Ccalluchi</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/64240176?v=4" width="100px;" alt="imanol"/><br>
+        <sub>
+          <b>Imanol Moscoso</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/64700259?v=4" width="100px;" alt="angela"/><br>
+        <sub>
+          <b>Angela Sucso</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/64240176?v=4" width="100px;" alt="luis2"/><br>
+        <sub>
+          <b>Moroco</b>
+        </sub>
+      </a>
+    </td>
+     
+  </tr>
+</table>
+
+
+
+## **Licencia**
 
 ---
 
