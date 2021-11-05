@@ -1,12 +1,11 @@
 # Transformación Lineal - Matematicas Aplicadas a la Computación
 
 ---
-
+[![PERFIL DE GITHUB](https://img.shields.io/badge/Interactua%20con%20la%20%20APP%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0080)](https://hypatiamac.herokuapp.com/)
 
 Interactua con nuestra app [Hypatia](https://hypatiamac.herokuapp.com/)
 
-### **Pre-requisitos 📋**
-=======
+
 ## Menu
 - [Colaboradores](#Colaboradores)
 - [Pre-requisitos](#Pre-requisitos)
