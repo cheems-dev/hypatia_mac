@@ -103,7 +103,7 @@
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="Yasmin"/><br>
         <sub>
-          <b>Elizabeth Huanca</b>
+          <b>Elizabeth Huanca Parqui</b>
         </sub>
       </a>
     </td>
@@ -111,7 +111,7 @@
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/52427932?v=4" width="100px;" alt="Joel"/><br>
         <sub>
-          <b>Gabriel Valencia</b>
+          <b>Joel Perca Quispe</b>
         </sub>
       </a>
     </td>
@@ -119,34 +119,27 @@
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/38531618?v=4" width="100px;" alt="Luis1"/><br>
         <sub>
+          <b>Luis Ccalluchi</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/64240176?v=4" width="100px;" alt="imanol"/><br>
+        <sub>
           <b>Imanol Moscoso</b>
         </sub>
       </a>
     </td>
      <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/64700259?v=4" width="100px;" alt="Angela"/><br>
+        <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="luis2"/><br>
         <sub>
-          <b>Elizabeth Huanca</b>
+          <b>Moroco</b>
         </sub>
       </a>
     </td>
-     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="Yasmin"/><br>
-        <sub>
-          <b>Elizabeth Huanca</b>
-        </sub>
-      </a>
-    </td>
-     <td align="center">
-      <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="Yasmin"/><br>
-        <sub>
-          <b>Elizabeth Huanca</b>
-        </sub>
-      </a>
-    </td>
+     
   </tr>
 </table>
 
