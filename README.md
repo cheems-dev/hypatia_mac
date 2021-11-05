@@ -2,7 +2,12 @@
 
 ---
 
-### **Pre-requisitos 📋**
+## Menu
+- [Pre-requisitos](#Pre-requisitos)
+- [Plugins de VsCode](#Plugins de VsCode)
+- [Instalación](#Instalación)
+
+## **Pre-requisitos 📋 **
 
 [Git](https://git-scm.com/)
 
@@ -16,7 +21,7 @@
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" width="50px;" alt="Foto do Mark Zuckerberg"/><br>
 
-### Plugins de VsCode 🤖
+## Plugins de VsCode 🤖
 
 [Container-Remote](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
