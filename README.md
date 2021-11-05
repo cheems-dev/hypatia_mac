@@ -95,6 +95,63 @@
 - Joel Perca - _Proyect Management y desarrollo_ - [reqhiem](https://github.com/reqhiem)
 - Luis Ccalluchi - _Documentación y desarrollo_ - [cheems-dev](https://github.com/cheems-dev)
 
+
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="Yasmin"/><br>
+        <sub>
+          <b>Elizabeth Huanca</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/52427932?v=4" width="100px;" alt="Joel"/><br>
+        <sub>
+          <b>Gabriel Valencia</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/38531618?v=4" width="100px;" alt="Luis1"/><br>
+        <sub>
+          <b>Imanol Moscoso</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/64700259?v=4" width="100px;" alt="Angela"/><br>
+        <sub>
+          <b>Elizabeth Huanca</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="Yasmin"/><br>
+        <sub>
+          <b>Elizabeth Huanca</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="Yasmin"/><br>
+        <sub>
+          <b>Elizabeth Huanca</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+
+
 ## **Licencia**
 
 ---
