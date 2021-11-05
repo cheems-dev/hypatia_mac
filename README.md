@@ -2,6 +2,64 @@
 
 ---
 [![PERFIL DE GITHUB](https://img.shields.io/badge/Interactua%20con%20la%20%20APP%20HYPATIA%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=BFFF00)](https://hypatiamac.herokuapp.com/)
+## **Colaboradores**
+
+---
+
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="Yasmin"/><br>
+        <sub>
+          <b>Elizabeth Huanca Parqui</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/52427932?v=4" width="100px;" alt="Joel"/><br>
+        <sub>
+          <b>Joel Cristian Perca Quispe</b>
+        </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/38531618?v=4" width="100px;" alt="Luis1"/><br>
+        <sub>
+          <b>Luis Alberto CCalluchi Lopez</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/64240176?v=4" width="100px;" alt="imanol"/><br>
+        <sub>
+          <b>Imanol Brayan Moscoso Apaza</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/64700259?v=4" width="100px;" alt="angela"/><br>
+        <sub>
+          <b>Angela Solage Sucso Choque</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/58355129?v=4" width="100px;" alt="luis2"/><br>
+        <sub>
+          <b>Luis Angel Moroco Ramos</b>
+        </sub>
+      </a>
+    </td>
+     
+  </tr>
+</table>
 
 ## Menu
 - [Colaboradores](#Colaboradores)
@@ -138,7 +196,7 @@
     </td>
      <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/64240176?v=4" width="100px;" alt="luis2"/><br>
+        <img src="https://avatars.githubusercontent.com/u/58355129?v=4" width="100px;" alt="luis2"/><br>
         <sub>
           <b>Luis Angel Moroco Ramos</b>
         </sub>
