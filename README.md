@@ -116,7 +116,7 @@ Interactua con nuestra app [Hypatia](https://hypatiamac.herokuapp.com/)
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/52427932?v=4" width="100px;" alt="Joel"/><br>
         <sub>
-          <b>Joel Perca Quispe</b>
+          <b>Joel Cristian Perca Quispe</b>
         </sub>
       </a>
     </td>
@@ -124,7 +124,7 @@ Interactua con nuestra app [Hypatia](https://hypatiamac.herokuapp.com/)
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/38531618?v=4" width="100px;" alt="Luis1"/><br>
         <sub>
-          <b>Luis Ccalluchi</b>
+          <b>Luis Alberto CCalluchi Lopez</b>
         </sub>
       </a>
     </td>
@@ -132,7 +132,7 @@ Interactua con nuestra app [Hypatia](https://hypatiamac.herokuapp.com/)
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/64240176?v=4" width="100px;" alt="imanol"/><br>
         <sub>
-          <b>Imanol Moscoso</b>
+          <b>Imanol Brayan Moscoso Apaza</b>
         </sub>
       </a>
     </td>
@@ -140,7 +140,7 @@ Interactua con nuestra app [Hypatia](https://hypatiamac.herokuapp.com/)
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/64700259?v=4" width="100px;" alt="angela"/><br>
         <sub>
-          <b>Angela Sucso</b>
+          <b>Angela Solage Sucso Choque</b>
         </sub>
       </a>
     </td>
@@ -148,7 +148,7 @@ Interactua con nuestra app [Hypatia](https://hypatiamac.herokuapp.com/)
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/64240176?v=4" width="100px;" alt="luis2"/><br>
         <sub>
-          <b>Moroco</b>
+          <b>Luis Angel Moroco Ramos</b>
         </sub>
       </a>
     </td>
