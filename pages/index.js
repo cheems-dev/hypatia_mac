@@ -52,9 +52,23 @@ export default function Home() {
                 className="rounded-full"
               />
 
-              <p>Joel Cristian Perca Quispe</p>
-              <p>@reqhiem</p>
-              <p>jperca@unsa.edu.pe</p>
+              <p>Luis Alberto CCalluchi Lopez</p>
+              <p>@cheems-dev</p>
+              <p>lcalluchi@unsa.edu.pe</p>
+
+            </div>
+
+            <div className={`mb-10 block `+styles.profileImg}>
+              <Image
+                src={profileImg}
+                width={100}
+                height={100}
+                className="rounded-full"
+              />
+
+              <p>Luis Angel Moroco Ramos</p>
+              <p>@LuisMorocco</p>
+              <p>lmorocco@unsa.edu.pe</p>
 
             </div>
           </div>
@@ -67,9 +81,9 @@ export default function Home() {
                 className="rounded-full"
               />
 
-              <p>Joel Cristian Perca Quispe</p>
-              <p>@reqhiem</p>
-              <p>jperca@unsa.edu.pe</p>
+              <p>Elizabeth Yasmin Huanca Parqui</p>
+              <p>@ElizabethYasmin</p>
+              <p>ehuancap@unsa.edu.pe</p>
 
             </div>
             <div className={styles.profileImg}>
@@ -80,9 +94,22 @@ export default function Home() {
                 className="rounded-full"
               />
 
-              <p>Joel Cristian Perca Quispe</p>
-              <p>@reqhiem</p>
-              <p>jperca@unsa.edu.pe</p>
+              <p>Angela Solage Sucso Choque</p>
+              <p>@AngelaSucso</p>
+              <p>asucso@unsa.edu.pe</p>
+
+            </div>
+            <div className={`mb-10 block `+styles.profileImg}>
+              <Image
+                src={profileImg}
+                width={100}
+                height={100}
+                className="rounded-full"
+              />
+
+              <p>Imanol Brayan Moscoso Apaza</p>
+              <p>@ImaMos01</p>
+              <p>imoscosoa@unsa.edu.pe</p>
 
             </div>
           </div>
