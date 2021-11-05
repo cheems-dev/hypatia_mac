@@ -3,6 +3,7 @@ import 'katex/dist/katex.min.css'
 import Head from 'next/head'
 import Latex from 'react-latex-next'
 import Layout from '../components/layout'
+import styles from './tema10.module.css'
 
 const definition = '$\\gamma_{1}^2 + x = y^2$'
 /* const definition = '$T:U$\\rightarrowV*2$' */
@@ -15,7 +16,7 @@ const tema10 = () => {
   return (
     <Layout>
       <Head>
-        <title>Hypatia - Tema 10</title>
+        <title>Hypatia /Tema 10</title>
       </Head>
       <div className='container px-8 mx-auto m-6 rounded-md shadow-xl bg-white'>
         <h2 className='text-3xl font-bold'>Nucleo e Imagén</h2>
@@ -82,6 +83,11 @@ const tema10 = () => {
         <Latex>{latexTemplate('x+ \\lambda y \\in T_{-1}(W) ')}</Latex>
         <h3 className='text-red-600 py-5 text-lg font-bold'>Ejemplos: </h3>
         <ol className='ml-10 list-decimal'>
+        <h1 className={`pb-4 `+ styles.mainTitle}>Imagen y núcleo de un transformación lineal</h1>
+
+        <h2 className='text-red-600 text-xl '>Ejemplos:</h2>
+        <ol className='m-10 list-decimal'>
+
           <li>
             <Latex>{latexTemplate('T: P_{n}(R) \\rightarrow R^{n+1}')}</Latex>,
             dada por

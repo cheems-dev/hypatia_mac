@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Zen+Antique&display=swap');
 
 .titulo{
-    font-family: 'Zen Antique', serif;
-    font-size: 30px;
+    font-size: 35px;
+    font-weight: bold;
+    color: #222729;
+    font-family: 'Roboto Slab', serif;
 }
 
 .subtitulo{
-    font-family: 'Merriweather', serif;
-    font-size: 25px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #292722;
+    font-family: 'Roboto Slab', serif;
 }
 
+.parrafo {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 8px;
+}
+
+.defTitle {
+    font-size: 17px;
+    font-weight: bold;
+    color: #292722;
+    font-family: 'Roboto Slab', serif;
+}
