@@ -111,7 +111,7 @@
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/52427932?v=4" width="100px;" alt="Joel"/><br>
         <sub>
-          <b>[Joel Perca Quispe](https://github.com/reqhiem)</b>
+          <b>Joel Perca Quispe</b>
         </sub>
       </a>
     </td>
@@ -133,7 +133,7 @@
     </td>
      <td align="center">
       <a href="#">
-        <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="luis2"/><br>
+        <img src="https://avatars.githubusercontent.com/u/64240176?v=4" width="100px;" alt="luis2"/><br>
         <sub>
           <b>Moroco</b>
         </sub>
