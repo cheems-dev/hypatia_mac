@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
 
 
 .mainTitle {
@@ -10,6 +13,26 @@
     color: #222729;
     font-family: 'Roboto Slab', serif;
 }
+
+.defTitle {
+    font-size: 17px;
+    font-weight: bold;
+    color: #292722;
+    font-family: 'Roboto Slab', serif;
+}
+
+.solTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e58a3;
+    font-family: 'Roboto Slab', serif;
+}
+
+.parrafo {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 8px;
+}
+
 
 .importante{
     font-family: 'Zen Kurenaido', sans-serif;
