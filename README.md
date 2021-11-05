@@ -13,7 +13,7 @@
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/62725994?v=4" width="100px;" alt="Yasmin"/><br>
         <sub>
-          <b>Elizabeth Huanca Parqui</b>
+          <b>Elizabeth Yasmin Huanca Parqui</b>
         </sub>
       </a>
     </td>
