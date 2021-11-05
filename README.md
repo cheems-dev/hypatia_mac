@@ -3,9 +3,6 @@
 ---
 [![PERFIL DE GITHUB](https://img.shields.io/badge/Interactua%20con%20la%20%20APP%20HYPATIA%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=BFFF00)](https://hypatiamac.herokuapp.com/)
 
-Interactua con nuestra app [Hypatia](https://hypatiamac.herokuapp.com/)
-
-
 ## Menu
 - [Colaboradores](#Colaboradores)
 - [Pre-requisitos](#Pre-requisitos)
@@ -95,10 +92,6 @@ Interactua con nuestra app [Hypatia](https://hypatiamac.herokuapp.com/)
 ## **Colaboradores**
 
 ---
-
-- Joel Perca - _Proyect Management y desarrollo_ - [reqhiem](https://github.com/reqhiem)
-- Luis Ccalluchi - _Documentación y desarrollo_ - [cheems-dev](https://github.com/cheems-dev)
-
 
 
 <table>
