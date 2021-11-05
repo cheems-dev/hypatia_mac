@@ -133,6 +133,14 @@
     </td>
      <td align="center">
       <a href="#">
+        <img src="https://avatars.githubusercontent.com/u/64700259?v=4" width="100px;" alt="angela"/><br>
+        <sub>
+          <b>Angela Sucso</b>
+        </sub>
+      </a>
+    </td>
+     <td align="center">
+      <a href="#">
         <img src="https://avatars.githubusercontent.com/u/64240176?v=4" width="100px;" alt="luis2"/><br>
         <sub>
           <b>Moroco</b>
