@@ -77,8 +77,16 @@
 ---
 
 - Next.js
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" width="200px;" alt="Foto do Mark Zuckerberg"/><br>
+
 - Tailwind
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" width="200px;" alt="Foto do Mark Zuckerberg"/><br>
+
 - Docker
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Docker_%28container_engine%29_logo.png" width="200px;" alt="Foto do Mark Zuckerberg"/><br>
 
 ## **Colaboradores**
 
