@@ -111,7 +111,7 @@
       <a href="#">
         <img src="https://avatars.githubusercontent.com/u/52427932?v=4" width="100px;" alt="Joel"/><br>
         <sub>
-          <b>Joel Perca Quispe</b>
+          <b>[Joel Perca Quispe](https://github.com/reqhiem)</b>
         </sub>
       </a>
     </td>
