@@ -410,7 +410,7 @@ const tema12 = () => {
                         [1] Coelho, F. U. (2001). Curso de Álgebra Linear, Um Vol. 34. Edusp.
                     </li>
                     <li className="mb-4">
-                        [2] Zani, S. L. (n.d.). Álgebra Linear. ICMC - USP.
+                        [3] Zani, S. L. (n.d.). Álgebra Linear. ICMC - USP.
                     </li>
                 </ul>
 
