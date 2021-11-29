@@ -239,7 +239,7 @@ const tema15 = () => {
                         El presente recurso geogebra nos permite visualizar la forma de desempeño de un isomorfismo. En el primer panel podemos ver un espacio vectorial de dimensión tres, mientras que en la otra se alcanza a ver una transformación de los puntos a una de dimensión dos.
                     </p>
 
-                    {/* <iframe scrolling="no" title="Isomorfismos" src="https://www.geogebra.org/material/iframe/id/phdhwdnf/width/1040/height/1135/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1040px" height="1135px"> </iframe> */}
+                    <script type="text/javascript" id="WolframAlphaScript951e83beaab8a6a6864e8cee51fa87d0" src="//www.wolframalpha.com/widget/widget.jsp?id=951e83beaab8a6a6864e8cee51fa87d0"></script>
 
                     <div className={`` + styles.caption}>
                         Recurso Goegebra que ejemplifica el desempeño de dos espacios vectoriales con un punto por medio de un isomorfismo donde se tiene que es inyectiva y sobreyectiva. Fuente: Adaptado de <a className={styles.link} href="https://www.geogebra.org/m/q4w9cetk" target="_blank">Elielzer Nuayed</a>.
