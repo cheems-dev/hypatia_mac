@@ -71,7 +71,7 @@ const tema16 = () => {
             <div className="container px-8 mx-auto m-6 rounded-md shadow-xl bg-white">
 
                 {/* AQUI VA SU CONTENIDO */}
-                <h1 className={`pb-4 `+ styles.mainTitle}>Diagonalización ortogonal</h1>
+                <h1 className={`pb-4 `+ styles.mainTitle}>Matrices simétricas Diagonalización ortogonal</h1>
                 
                 <div className={`flex flex-row `}>
                     <Image 

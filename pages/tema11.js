@@ -248,7 +248,7 @@ const tema11 = () => {
                 <p className={`leading-relaxed ` + styles.parrafo}>
                     En la siguiente hoja dinámica en geogebra se exhibirá la matriz de una transformación lienal representada en una imágen, donde se puede modificar los valores de entrada y salida.
                 </p>
-                    <iframe scrolling="no" title="TL" src="https://www.geogebra.org/material/iframe/id/czbyp7nt/width/1890/height/880/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1040pxpx" height="1135px"> </iframe>
+                    <iframe scrolling="no" title="TL" src="https://www.geogebra.org/material/iframe/id/czbyp7nt/width/1890/height/880/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1040pxpx" height="500px"> </iframe>
                 </div>
                 <div className={`flex flex-row `}>
                     <Image 
