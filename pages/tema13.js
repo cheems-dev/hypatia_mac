@@ -189,15 +189,32 @@ const tema13 = () => {
             </div>
             
             <div className="container px-8 mx-auto m-6 rounded-md shadow-xl bg-white">
+                <h2 className={`pb-4 `+ styles.subtitulo}>Recurso Python</h2>
+                <p className={`leading-relaxed `+styles.parrafo}>
+                    El presente recurso en python nos permite visualizar el resultado de un cambio de base B a C.
+                </p>
+                <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@requiemm/cambiobase?embed=true"></iframe>
+                
+            </div>
+
+            <div className="container px-8 mx-auto m-6 rounded-md shadow-xl bg-white">
                 <h2 className={`pb-4 `+ styles.subtitulo}>Recurso Geogebra</h2>
                 <p className={`leading-relaxed `+styles.parrafo}>
-                    A continuación se visualiza una representación gráfica de un vector "v", en dos bases distintas.<br/><br/>
-                    Indicaciones:<br/>
-                    Para variar la base B2, pincha y mueve los vectores w_1 y w_2.<br/>
-                    Para cambiar el vector v, pínchalo y muévelo en la base canónica.
-                    <iframe scrolling="no" title="Cambio de Base" src="https://www.geogebra.org/material/iframe/id/XKsP7mA5/width/816/height/420/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="816px" height="420px"> </iframe>
+                    El presente recurso geogebra nos permite visualizar el procedimiento de cambio de base. En el primer panel podemos ver una base U, mientras que en la otra se logra ver una base V.
                 </p>
+                <iframe scrolling="no" title="Cambio de Base" src="https://www.geogebra.org/material/iframe/id/sYpNAKwa/width/1366/height/647/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px"> </iframe>
+                <div className={`` + styles.caption}>
+                        Recurso Goegebra que ejemplifica el cambio de la base U a la base V. Fuente: Adaptado de <a className={styles.link} href="https://www.geogebra.org/m/sYpNAKwa" target="_blank">Sergio Rubio-Pizzorno</a>.
+                </div>
             </div>
+           
+            <h6 className={`mt-4 ` + styles.subtitulo}>Bibliografía: </h6>
+
+            <ul className={`ml-8 pb-8 ` + styles.biblio}>
+                <li>
+                    [1] Zani, S. L. (n.d.). Álgebra Linear. ICMC - USP.
+                </li>
+            </ul>
 
         </Layout>    // FALTA EL RECURSO DE PYTHON Y EL DE GEOGEBRA
     );
