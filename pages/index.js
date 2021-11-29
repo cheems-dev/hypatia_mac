@@ -74,31 +74,31 @@ export default function Home() {
           </div>
           <div className="col-start-2 col-span-1">
           <div className={`mb-10 `+styles.profileImg}>
-              <Image
-                src={profileImg}
-                width={100}
-                height={100}
-                className="rounded-full"
-              />
+            <Image
+              src={profileImg}
+              width={100}
+              height={100}
+              className="rounded-full"
+            />
 
-              <p>Elizabeth Yasmin Huanca Parqui</p>
-              <p>@ElizabethYasmin</p>
-              <p>ehuancap@unsa.edu.pe</p>
+            <p>Elizabeth Yasmin Huanca Parqui</p>
+            <p>@ElizabethYasmin</p>
+            <p>ehuancap@unsa.edu.pe</p>
 
-            </div>
-            <div className={styles.profileImg}>
-              <Image
-                src={profileImg}
-                width={100}
-                height={100}
-                className="rounded-full"
-              />
+          </div>
+          <div className={styles.profileImg}>
+            <Image
+              src={profileImg}
+              width={100}
+              height={100}
+              className="rounded-full"
+            />
 
-              <p>Angela Solage Sucso Choque</p>
-              <p>@AngelaSucso</p>
-              <p>asucso@unsa.edu.pe</p>
+            <p>Angela Solage Sucso Choque</p>
+            <p>@AngelaSucso</p>
+            <p>asucso@unsa.edu.pe</p>
 
-            </div>
+          </div>
             <div className={`mb-10 block `+styles.profileImg}>
               <Image
                 src={profileImg}

@@ -10,11 +10,26 @@
     font-family: 'Roboto Slab', serif;
 }
 
-.defTitle {
-    font-size: 17px;
+.submainTitle{
+    font-size: 25px;
     font-weight: bold;
-    color: #292722;
+    color: #53595c;
     font-family: 'Roboto Slab', serif;
+}
+
+.defTitle {
+    font-size: 19px;
+    font-weight: bold;
+    color: #e45050;
+    font-family: 'Roboto Slab', serif;
+}
+
+.obsTitle{
+    color: #88ff00; 
+}
+
+.ejemTitle{
+    color: #ffee00;
 }
 
 .solTitle {
