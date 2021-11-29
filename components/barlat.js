@@ -35,7 +35,7 @@ const Barlat = (props) => {
                 </li>
             </ul>
 
-            <p>Capítulo 2</p>
+            <p>Capítulo 3</p>
             <ul className={styles.listContent}>
                 <li className={styles.itemContent}>
                     <Link href="/tema14">
