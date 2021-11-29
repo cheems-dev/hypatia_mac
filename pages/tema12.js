@@ -391,7 +391,7 @@ const tema12 = () => {
                     <iframe scrolling="no" title="Isomorfismos" src="https://www.geogebra.org/material/iframe/id/phdhwdnf/width/1040/height/1135/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1040px" height="1135px"> </iframe>
 
                     <div className={`` + styles.caption}>
-                        Recurso Goegebra que ejemplifica el desempeño de dos espacios vectoriales con un punto por medio de un isomorfismo donde se tiene que es inyectiva y sobreyectiva. Fuente: Adaptado de <a className={styles.link} href="https://www.geogebra.org/m/q4w9cetk">Elielzer Nuayed</a>.
+                        Recurso Goegebra que ejemplifica el desempeño de dos espacios vectoriales con un punto por medio de un isomorfismo donde se tiene que es inyectiva y sobreyectiva. Fuente: Adaptado de <a className={styles.link} href="https://www.geogebra.org/m/q4w9cetk" target="_blank">Elielzer Nuayed</a>.
                     </div>
                 </div>
 
