@@ -144,7 +144,7 @@ const tema15 = () => {
                     <p className={`leading-relaxed `+styles.parrafo}>
                         <span className="italic">i. </span> Hallamos la matriz de transformación con respecto a la base canónica  <Latex>{laTemp('B = \\left \\{ (1,0), (0,1) \\right \\}')}</Latex>:
 
-                        <Latex>{LaTemp('T(1,0) = (0,4) = 0(1,0) + 4(0,1) \\\\ T(0,1) = (1,0) = 1(1,0) + 0(0,1) \\\\ \\Rightarrow [T]_{B} = \\begin{bmatrix} 0 & 1\\\\  4 & 0 \\\end{bmatrix}')}</Latex>
+                        <Latex>{LaTemp('T(1,0) = (0,4) = 0(1,0) + 4(0,1) \\\\ T(0,1) = (1,0) = 1(1,0) + 0(0,1) \\\\ \\Rightarrow [T]_{B} = \\begin{pmatrix} 0 & 1\\\\  4 & 0 \\\end{pmatrix}')}</Latex>
                     </p>
                     <p className={`leading-relaxed `+styles.parrafo}>
                         <span className="italic">ii. </span> Luego:
@@ -160,11 +160,11 @@ const tema15 = () => {
                     </p>
                     <p className={`leading-relaxed ml-4 `+styles.parrafo}>
                         <span className="italic">a. </span> <Latex>{laTemp('\\lambda_{1} = -2 \\Rightarrow ([T]_{B} + 2I)v = 0 \\text{, donde } v = \\binom{x}{y} \\neq \\binom{0}{0}')}</Latex>
-                        <Latex>{LaTemp('\\begin{bmatrix} 2 & 1\\\\  4 & 2 \\end{bmatrix} \\begin{bmatrix} x \\\\  y  \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 0 \\end{bmatrix} \\Rightarrow \\left\\{\\begin{matrix} 2x +y=0\\\\ y = -2x \\end{matrix}\\right. \\\\ \\Rightarrow v = \\begin{pmatrix} x\\ y \\end{pmatrix} = \\begin{pmatrix} x\\\\ -2x \\end{pmatrix} = x\\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix} \\\\ V(-2) = [(1,-2)] \\text{, } dim_{\\mathbb{R}} V(-2) = 1')}</Latex>
+                        <Latex>{LaTemp('\\begin{pmatrix} 2 & 1\\\\  4 & 2 \\end{pmatrix} \\begin{pmatrix} x \\\\  y  \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix} \\Rightarrow \\left\\{\\begin{matrix} 2x +y=0\\\\ y = -2x \\end{matrix}\\right. \\\\ \\Rightarrow v = \\begin{pmatrix} x\\ y \\end{pmatrix} = \\begin{pmatrix} x\\\\ -2x \\end{pmatrix} = x\\begin{pmatrix} 1 \\\\ -2 \\end{pmatrix} \\\\ V(-2) = [(1,-2)] \\text{, } dim_{\\mathbb{R}} V(-2) = 1')}</Latex>
                     </p>
                     <p className={`leading-relaxed ml-4 `+styles.parrafo}>
                         <span className="italic">b. </span> <Latex>{laTemp('\\lambda_{1} = 2 \\Rightarrow ([T]_{B} - 2I)v = 0 \\text{, donde } v = \\binom{x}{y} \\neq \\binom{0}{0}')}</Latex>
-                        <Latex>{LaTemp('\\begin{bmatrix} -2 & 1\\\\  4 & -2 \\end{bmatrix} \\begin{bmatrix} x \\\\  y  \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ 0 \\end{bmatrix} \\Rightarrow \\left\\{\\begin{matrix} -2x +y=0\\\\ y = 2x \\end{matrix}\\right. \\\\ \\Rightarrow v = \\begin{pmatrix} x\\ y \\end{pmatrix} = \\begin{pmatrix} x\\\\ 2x \\end{pmatrix} = x\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} \\\\ V(2) = [(1,2)] \\text{, } dim_{\\mathbb{R}} V(2) = 1')}</Latex>
+                        <Latex>{LaTemp('\\begin{pmatrix} -2 & 1\\\\  4 & -2 \\end{pmatrix} \\begin{pmatrix} x \\\\  y  \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ 0 \\end{pmatrix} \\Rightarrow \\left\\{\\begin{matrix} -2x +y=0\\\\ y = 2x \\end{matrix}\\right. \\\\ \\Rightarrow v = \\begin{pmatrix} x\\ y \\end{pmatrix} = \\begin{pmatrix} x\\\\ 2x \\end{pmatrix} = x\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix} \\\\ V(2) = [(1,2)] \\text{, } dim_{\\mathbb{R}} V(2) = 1')}</Latex>
                     </p>
                     <p className={`leading-relaxed `+styles.parrafo}>
                         <span className="italic">v. </span> Aquí observamos que <Latex>{laTemp('\\mathbb{R}^2 = V(-2) \\oplus V(2) \\Rightarrow T')}</Latex> <span className="font-bold">es diagonalizable</span>.
@@ -221,7 +221,7 @@ const tema15 = () => {
                     <p className={`leading-relaxed `+styles.parrafo}>
                         <span className="italic">i. </span> Hallamos la matriz de transformación con respecto a la base canónica  <Latex>{laTemp('B = \\left \\{ (1,0,0), (0,1,0),(0,0,1) \\right \\}')}</Latex>:
 
-                        <Latex>{LaTemp('T(1,0,0) = (1,0,1) \\\\ T(0,1,0) = (0,1,1) \\\\ T(0,0,1) = (1,1,2) \\\\ \\Rightarrow [T]_{B} = \\begin{bmatrix} 1 & 0 & 1\\\\  0 & 1 & 1 \\\\ 1 & 1 & 2 \\\end{bmatrix}')}</Latex>
+                        <Latex>{LaTemp('T(1,0,0) = (1,0,1) \\\\ T(0,1,0) = (0,1,1) \\\\ T(0,0,1) = (1,1,2) \\\\ \\Rightarrow [T]_{B} = \\begin{pmatrix} 1 & 0 & 1\\\\  0 & 1 & 1 \\\\ 1 & 1 & 2 \\\end{pmatrix}')}</Latex>
                     </p>
                     <p className={`leading-relaxed `+styles.parrafo}>
                         <span className="italic">ii. </span> Luego:
@@ -244,7 +244,7 @@ const tema15 = () => {
                         width={60}
                         height={60}
                     />
-                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Recurso geogebra:</h3>
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Recurso Wolfram:</h3>
                 </div>
                 
                 <div className="container mx-auto m-6 rounded-md text-gray-500">
