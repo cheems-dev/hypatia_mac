@@ -1,7 +1,13 @@
 # Transformación Lineal - Matematicas Aplicadas a la Computación
 
 ---
-[![PERFIL DE GITHUB](https://img.shields.io/badge/Interactua%20con%20la%20%20APP%20HYPATIA%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=BFFF00)](https://hypatiamac.herokuapp.com/)
+[![HYPATIA](https://img.shields.io/badge/Interactua%20con%20la%20%20APP%20HYPATIA%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=BFFF00)](https://hypatiamac.herokuapp.com/)
+[![HYPATIA](https://img.shields.io/badge/Perca%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0000)](https://github.com/reqhiem/)
+[![HYPATIA](https://img.shields.io/badge/Huanca%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0000)](https://github.com/reqhiem/)
+[![HYPATIA](https://img.shields.io/badge/CCalluchi%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0000)](https://github.com/reqhiem/)
+[![HYPATIA](https://img.shields.io/badge/Moscoso%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0000)](https://github.com/reqhiem/)
+[![HYPATIA](https://img.shields.io/badge/Sucso%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0000)](https://github.com/reqhiem/)
+[![HYPATIA](https://img.shields.io/badge/Moroco%20-%23323330.svg?&style=for-the-badge&logo=perfil&logoColor=black&color=FF0000)](https://github.com/reqhiem/)
 ## **Colaboradores**
 
 ---
