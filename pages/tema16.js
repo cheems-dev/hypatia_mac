@@ -15,13 +15,22 @@ import styles from './tema16.module.css';
 
 //Vars, functions and consts
 let expr1 = "$A \\in \\R^{n \\times n}$";
-let expr2 = "$A = O \\Lambda O^T \\text{ o } A = O^T \\Lambda O$";
+let expr2 = "$A = O \\Lambda O^T \\text{ o } \\Lambda = O^T A O$";
 let expr3 = "$(O^{-1}=O^T)$";
 let expr4 = "$$\\begin{align*} T: \\R^2 & \\to \\R^2  \\\\ (x,y) & \\to T(x,y)=(2x+2y,2x+5y) \\\\ \\end{align*}$$";
 let expr5 = "$A=[T]_{\\beta}^{\\beta}$";
 let expr6="$$ A= \\begin{bmatrix}  2 & 2 \\\\ 2 &  5 \\\\ \\end{bmatrix}$$";
 let expr7="$$p(\\lambda)=det(A-\\lambda I)=(2-\\lambda)(5-\\lambda)-4 = \\lambda-7\\lambda+6$$";
 let expr7_1 = "$A=[T]_{\\gamma}^{\\gamma} = \\Lambda = diag(\\lambda_1,\\lambda_2)$";
+let expr7_2 = "$v_1=(-2,1) \\text{ y } v_2=(1,2)$";
+let expr7_3 = "$\\gamma = {v1,v2}$";
+let expr7_4 = "$\\gamma^* = {v1,v2}$";
+let expr7_5="$$X_1=\\frac{1}{\\sqrt{5}} \\begin{bmatrix}  -2 \\\\ 1 \\\\ \\end{bmatrix}"+
+" \\text{ y } X_2 =frac{1}{\\sqrt{5}} \\begin{bmatrix}  1 \\\\ 2 \\\\ \\end{bmatrix} $$";
+let expr7_6 = "$$A = O \\Lambda O^T \\text{ o } \\Lambda = O^T A O$$";
+
+let expr7_7="$$O=\\frac{1}{\\sqrt{5}} \\begin{bmatrix}  -2 & 1 \\\\ 1 & 2 \\\\ \\end{bmatrix}"+
+" \\text{ y } \\Lambda =\\begin{bmatrix}  1 & 0 \\\\ 0 & 6 \\\\ \\end{bmatrix} $$";
 
 let expr5_2="$[T]_{B}$";
 
@@ -33,14 +42,6 @@ let expr6_3="$$ [T]_{B,G}= \\begin{bmatrix}  1 & 1 & 0 \\\\" +
 "1 &  0 & -1 \\\\ \\end{bmatrix}$$";
 
 
-
-let expr7_2="$B = \\left\\{1,(x-1),(x-1)^2\\right\\} \\text{ de } \\mathcal{P_2}(\\R) \\text{ y } "+
-                "G = \\left\\{1,x,x^2,x^3\\right\\} \\text{ de } \\mathcal{P_3}(\\R)$";
-let expr7_3="$$\\begin{align*} T(1) &=(x+1)1 = (x+1)=1+1x+0x^2+1x^3 \\\\ T(x-1) &= (x+1)(x-1) = (x^2-1) = -1+0x+1x^2+0x^3 \\\\"+
-"T((x-1)^2) &= (x+1)(x-1)^2 = (x^3-x^2-x+1) = 1-1x-1x^2+1x^3 \\\\ \\end{align*}$$"; 
-let expr7_4="$$ [T]_{B,G}= \\begin{bmatrix}  1 & -1 & 1 \\\\ 1 &  0 & -1 \\\\ 0 & 1 &- 1 \\\\ 0 & 0 & 1 \\\\ \\end{bmatrix}$$";
-
-let expr8="$$[T]_{B,G}=0$$";
 
 let expr9="$T: \\mathcal{P_2}(\\R) \\to \\R^3$";
 let expr9_1="$ [T]_{B,G}= \\begin{bmatrix}  1 & 1 & 2 \\\\" +
@@ -65,7 +66,7 @@ const tema16 = () => {
     return (
         <Layout>
             <Head>
-                <title>Hypatia - Tema 11</title>
+                <title>Hypatia - Tema 16</title>
             </Head>
             <div className="container px-8 mx-auto m-6 rounded-md shadow-xl bg-white">
 
@@ -83,8 +84,8 @@ const tema16 = () => {
                 </div>
 
                 <p className={`leading-relaxed `+styles.parrafo}>
-                    Una matriz <Latex>{expr1}</Latex> es diagonalizable ortogonalmente si existe una matriz ortogonal <Latex>$O$</Latex> tal
-                    que <Latex>{expr2}</Latex> donde <Latex>{expr3}</Latex><br/>
+                    Una matriz <Latex>{expr1}</Latex> es diagonalizable ortogonalmente si existe 
+                    una matriz ortogonal <Latex>$O$</Latex> tal que <Latex>{expr2}</Latex> donde <Latex>{expr3}</Latex><br/>
                     Las unicas matrices que pueden diagonalizarse ortogonalmente son las matrices simétricas debido a que la transpuesta de su matriz es igual a la inversa.
                 </p>
                 
@@ -114,7 +115,17 @@ const tema16 = () => {
                        <Latex>{expr7}</Latex>
                        así ,<Latex>$\lambda_1 = 1$</Latex> y <Latex>$\lambda_2 = 6$</Latex> son los autovalores del operador <Latex>$T$</Latex>. Como los
                        los autovalores son distintos, podemos garantizar que existe una base de autovectores <Latex>$\gamma$</Latex> para <Latex>$\R^2$</Latex> de modo que
-                       la matriz <Latex>{expr7_1}</Latex>.
+                       la matriz <Latex>{expr7_1}</Latex>.<br/>
+                       Los autovectores asociados con los autovectores <Latex>$\lambda_1$</Latex> y <Latex>$\lambda_2$</Latex> son <Latex>{expr7_2}</Latex>, respectivamente.
+                       Así, tenemos que <Latex>{expr7_3}</Latex> es una base ortogonal de autovectores en el espacio vectorial <Latex>$\R^2$</Latex>. Podemos también obtener
+                       una base ortonormal de autovectores <Latex>{expr7_4}</Latex> para <Latex>$\R^2$</Latex>, obetenido a partir de la base ortogonal <Latex>$\gamma$</Latex>. Sabemos que
+                       <Latex>{expr7_5}</Latex>
+                       Son los autovectores de la matriz <Latex>$A$</Latex> asociados a los autovalores <Latex>$\lambda_1 = 1$</Latex> y <Latex>$\lambda_2 = 6$</Latex>, respectivamente. Podemos observar
+                       facilmente que <Latex>$AO=O\Lambda$</Latex>
+                       <Latex>{expr7_7}</Latex>
+                       de ese modo, la matriz <Latex>{expr5}</Latex> puede ser representado de la siguiente forma:
+                       <Latex>{expr7_6}</Latex>
+                       note que la matriz <Latex>$OO^T = O^TO = I$</Latex> y realiza la diagonalización de la matriz <Latex>{expr5}</Latex>
                     </p>
                 </div>
 
