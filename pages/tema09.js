@@ -303,7 +303,7 @@ const tema09 = () => {
                   {' '}
                   <Latex>
                     {latexTemplate(
-                      "T(f_{1} + f_{2}) = (f_{1} + f_{2})' = f_{1}' + f_{2}' = T(f_{1}) + T(f_{2})"
+                      "$T(f_{1} + f_{2}) = (f_{1} + f_{2})' = f_{1}' + f_{2}' = T(f_{1}) + T(f_{2})$"
                     )}
                   </Latex>
                 </li>
@@ -311,12 +311,12 @@ const tema09 = () => {
                   {' '}
                   <Latex>
                     {latexTemplate(
-                      "T(\\lambda f)= (\\lambda f)' = \\lambda f' = \\lambda T(f). "
+                      "$T(\\lambda f)= (\\lambda f)' = \\lambda f' = \\lambda T(f). $"
                     )}
                   </Latex>{' '}
                   <Latex>
                     {latexTemplate(
-                      " \\forall f \\in C'([0,1];R), \\forall \\lambda \\in R"
+                      "$ \\forall f \\in C'([0,1];R), \\forall \\lambda \\in R$"
                     )}
                   </Latex>
                 </li>
@@ -390,7 +390,15 @@ const tema09 = () => {
             <Latex>{latexTemplate(' i = 1 ... n')}</Latex>
           </p>
 
-          <h3 className={`pb-4 ` + styles.defTitle}>Ejemplo 1: </h3>
+          <div className={`flex flex-row `}>
+                            <Image 
+                                src="/ejercicio_icon.png"
+                                alt="Observacion"
+                                width={60}
+                                height={60}
+                            />
+                            <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo 1:</h3>
+                        </div>                           
           <p></p>
           <p className={`leading-relaxed ` + styles.parrafo}>
             Encontrar una expresión para{' '}
@@ -412,7 +420,6 @@ const tema09 = () => {
             </Latex>{' '}
             forman una base de <Latex>{latexTemplate('\\mathbb{R^{3}}')}</Latex>
             <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
-              <Latex>{expr7_4}</Latex>
             </p>
             <br></br>   
             Dado{' '}
@@ -455,7 +462,51 @@ const tema09 = () => {
 
 
 
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/ejercicioresuelto_icon.png"
+                        alt="Observacion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}> Ejercicio resuelto 1:</h3>
+                </div>
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                <span className="italic"> </span> Encontrar una transformacion lineal <Latex>{latexTemplate('T : \\mathbb{R} \\rightarrow  \\mathbb{R}')}</Latex> 
+                tal que <Latex>{latexTemplate('T\\left ( 1,2 \\right ) = \\left ( 3, -1 \\right ) \\ y \\ T\\left ( 0,1 \\right ) = \\left ( 1,2 \\right )')}</Latex>
+                </p>
 
+                <p className={`leading-relaxed ml-8 ` + styles.parrafo}>
+                1. Notemos que <Latex>{latexTemplate('\\left ( 1,2 \\right ) y \\left ( 0,1 \\right )')}</Latex> forman una base en <Latex>{latexTemplate('\\mathbb{R}^{2}')}</Latex>
+                Si <Latex>{latexTemplate('\\left ( x,y \\right ) \\in \\mathbb{R}^{2}')}</Latex> entonces podemos verificar tenemos <Latex>{latexTemplate('\\left ( x,y \\right ) = x\\left ( 1,2 \\right ) + \\left ( y - 2x \\right )\\left ( 0,1 \\right )')}</Latex>
+                de este modo <Latex>$T$</Latex> debe satisfacer:
+                </p>
+                
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                    <Latex>{latexTemplate('$T\\left ( x,y \\right ) = T\\left ( x\\left ( 1,2 \\right ) + \\left ( y-2x \\right )\\left ( 0,1 \\right ) \\right ) = xT\\left ( 1, 2 \\right ) + \\left ( y-2x \\right )T\\left ( 0,1 \\right )$')}</Latex>
+                    <Latex>{latexTemplate('$T\\left ( x,y \\right ) = x\\left ( 3,-1 \\right ) + \\left ( y-2x \\right )\\left ( 1,2 \\right ) = \\left ( x+y, 2y-5x \\right )$')}</Latex>
+                    <Latex>$\therefore $</Latex> Se puede ver fácilmente que la transformación T definida como arriba es lineal y cumple las condiciones solicitadas.
+                </p>
+
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/geogebra_icon.png"
+                        alt="Observacion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}> Recurso 1:</h3>
+                </div>
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                Este recurso fue contruido en Geogebra e ilustra una transformación lineal dos matrices, tenemos 4 variables que podemos cambiar 
+                solo debemos mover el cursor, veremos como nuestro objeto cambia se transforma. Tambien cambiando el valor de 'n' podemos iterar 
+                entre imágenes.
+
+                https://www.geogebra.org/m/keG7vsZS
+                </p>
+                <div className="container mx-auto m-6 rounded-md text-gray-500 text-xl"> 
+                    <iframe scrolling="no" title="Transformaciones lineales" src="https://www.geogebra.org/material/iframe/id/Rqdm4sNv/width/1884/height/969/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1341px" height="816px"> </iframe>
+                </div>                                                           
           </div>
         
         </Layout>        
