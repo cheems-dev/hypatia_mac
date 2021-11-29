@@ -248,15 +248,22 @@ const tema14 = () => {
                                 Sistema homogeneo.
 
                                 <p className={`leading-relaxed ` + styles.parrafo}>
-                                <Latex>{laT('\\begin{pmatrix}-\\lambda  & 1\\\\  4 & -\\lambda \\end{pmatrix}')}</Latex>
-                                <Latex>{laT('\\begin{pmatrix} x\\\\  y \\end{pmatrix}')}</Latex>=
-                                <Latex>{laT('\\begin{pmatrix} 0\\\\  0 \\end{pmatrix}')}</Latex>
+                                    <Latex>{laT('\\begin{pmatrix}-\\lambda  & 1\\\\  4 & -\\lambda \\end{pmatrix}')}</Latex>
+                                    <Latex>{laT('\\begin{pmatrix} x\\\\  y \\end{pmatrix}')}</Latex>=
+                                    <Latex>{laT('\\begin{pmatrix} 0\\\\  0 \\end{pmatrix}')}</Latex>
                                 No posee solucion inicial
                                 </p>
                                 <p className={`leading-relaxed ` + styles.parrafo}>
-                                Es decir <Latex>{laT('det \\begin{pmatrix}-\\lambda  & 1\\\\  4 & -\\lambda \\end{pmatrix}=0')}</Latex>
-                                <Latex>{laT('\\lambda ^{2}-4 \\Rightarrow \\left ( \\lambda -2 \\right )\\left ( \\lambda +2 \\right )=0 \\Rightarrow \\lambda _{1}=-2 \\text{ y } \\lambda _{2}=2')}</Latex>
+                                    Es decir <Latex>{laT('det \\begin{pmatrix}-\\lambda  & 1\\\\  4 & -\\lambda \\end{pmatrix}=0')}</Latex>
+                                    <Latex>{laT('\\lambda ^{2}-4 \\Rightarrow \\left ( \\lambda -2 \\right )\\left ( \\lambda +2 \\right )=0 \\Rightarrow \\lambda _{1}=-2 \\text{ y } \\lambda _{2}=2')}</Latex>
                                 </p>
+
+                                <p className={`leading-relaxed ` + styles.parrafo}>
+                                    <Latex>{laT('V(-2) = \\left \\{ \\left( x,y \\right) \\in \\mathbb{R}^{2} :T \\left( x,y \\right)=2 \\left( x,y \\right) \\right \\}')}</Latex>
+                                
+
+                                    <Latex>{laT('=\\left \\{ \\left ( x,y \\right ) \\in \\mathbb{R}^{2} : \\left ( y,4x \\right )=\\left ( -2x,-2y \\right )\\right \\} ')}</Latex>
+                                 </p>
                                 
 
                         </li>
