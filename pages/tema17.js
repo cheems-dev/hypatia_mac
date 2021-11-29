@@ -8,7 +8,7 @@ import Image from 'next/image'
 import Latex from 'react-latex-next'
 //Own imports
 import Layout from '../components/layout'
-import styles from './tema09.module.css'
+import styles from './tema17.module.css'
 
 function latexTemplate(text) {
   return `$${text}$`
@@ -20,7 +20,7 @@ const tema09 = () => {
       <Head>
         <title>Hypatia - Transformaciones lineales</title>
       </Head>
-      <div className={styles.container}>
+      <div className={`container px-8 mx-auto m-6 rounded-md shadow-xl bg-white`}>
         <h1 className={`pb-4 ` + styles.mainTitle}>
           Descompocisión del valor singular
         </h1>
@@ -167,6 +167,9 @@ const tema09 = () => {
           >
             {' '}
           </iframe>
+          <div className={`` + styles.caption}>
+            Recurso Goegebra. Fuente: Tomado de <a className={styles.link} href="https://www.geogebra.org/m/LkQ7UiCt" target="_blank">Michael Borcherds</a>.
+          </div>
         </div>
       </div>
     </Layout>
