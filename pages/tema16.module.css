@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 
-
-
 .mainTitle {
     font-size: 35px;
     font-weight: bold;
@@ -42,21 +40,6 @@
 .parrafo {
     font-family: 'Nunito', sans-serif;
     margin-bottom: 8px;
-}
-
-.caption{
-    font-size: 12px;
-    font-weight: bold;
-    color: #53595c;
-    font-family: 'Roboto Slab', serif;
-}
-
-.link{
-    font-size: 15px;
-    font-weight: bold;
-    color: #1e58a3;
-    font-family: 'Roboto Slab', serif;
-    text-decoration: underline;
 }
 
 .biblio{
