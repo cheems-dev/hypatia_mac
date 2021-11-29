@@ -461,7 +461,6 @@ const tema09 = () => {
           </p>
 
 
-
                 <div className={`flex flex-row `}>
                     <Image 
                         src="/ejercicioresuelto_icon.png"
@@ -506,7 +505,43 @@ const tema09 = () => {
                 </p>
                 <div className="container mx-auto m-6 rounded-md text-gray-500 text-xl"> 
                     <iframe scrolling="no" title="Transformaciones lineales" src="https://www.geogebra.org/material/iframe/id/Rqdm4sNv/width/1884/height/969/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1341px" height="816px"> </iframe>
-                </div>                                                           
+                </div>   
+
+                Ahora dejaremos ejercicios para resolver con las transformaciones lineales.
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/tareahome_icon.png"
+                        alt="Observacion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}> Ejercicios Adicionales:</h3>
+                </div>
+                Verificar si son transformaciones lineales.
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                1) Probar que <Latex>$T$</Latex> es una transformación lineal donde C y B son bases:
+                Tenemos <Latex>{latexTemplate('T : \\mathbb{C}x \\rightarrow \\mathbb{M}_2\\left ( \\mathbb{R} \\right )')}</Latex>
+                <Latex>{latexTemplate('$T\\left ( x, iy \\right ) = \\bigl(\\begin{smallmatrix}x + 7y  &  5y\\\\  -10y & x-7y \\end{smallmatrix}\\bigr)$')}</Latex>
+                </p>
+
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                2) verificar que <Latex>{latexTemplate('T: P_2\\left ( \\mathbb{R} \\right ) \\rightarrow P_2\\left (  \\mathbb{R}\\right )')}</Latex> es una transformación lineal.
+                Tenemos: <Latex>{latexTemplate('$T\\left ( a,b,c \\right )_B = \\left ( 2c-2b, a+c, a+b+c \\right )_C$')}</Latex>
+                <Latex>{latexTemplate('$C = \\begin{Bmatrix}1,&x,&x^{2} \\end{Bmatrix} $')}</Latex>
+                <Latex>{latexTemplate('$B = \\begin{Bmatrix}1,&x + x^{2},& 1 + x^{2} \\end{Bmatrix}$')}</Latex>
+                </p>
+
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                3) <Latex>{latexTemplate('T: R^{2} \\rightarrow R^{2}. T\\left ( x,y \\right ) = \\left ( x,1 \\right )')}</Latex> <br></br>
+                4) <Latex>{latexTemplate('T: R^{2} \\rightarrow R^{2}. T\\left ( x,y \\right ) = \\left ( x^{2},y \\right )')}</Latex><br></br>
+                5) <Latex>{latexTemplate('T: R^{3} \\rightarrow R^{3}. T\\left ( x,y,z \\right ) = \\left ( x+y,x-y,z \\right )')}</Latex><br></br>
+                6) <Latex>{latexTemplate('T: R^{3} \\rightarrow R^{3}. T\\left ( x,y,z \\right ) = \\left ( x+1,y+1,z+1 \\right )')}</Latex><br></br>
+                7) <Latex>{latexTemplate('T: R^{2} \\rightarrow R^{3}. T\\left ( x,y \\right ) = \\left ( x^{2},xy,y^{2} \\right ) ')}</Latex><br></br>
+                8) <Latex>{latexTemplate('T:M_{2,2} \\rightarrow R, t\\left ( A \\right ) = a+b+c+d, A=\\begin{bmatrix}a & b\\\\ c & d\\end{bmatrix}')}</Latex><br></br>
+                9) <Latex>{latexTemplate('T:M_{3,3} \\rightarrow M_{3,3}, T\\left ( A \\right ) = \\begin{bmatrix}0 & 0 & 1\\\\ 0 & 1 & 0\\\\ 1 & 0 & 0\\end{bmatrix}A')}</Latex><br></br>
+                10) <Latex>{latexTemplate('T:P_2 \\rightarrow P_2, T\\left ( a_0 + a_1 x+ a_2 x^{2} \\right ) = \\left ( a_0 + a_1 + a_2 \\right ) + \\left ( a_1 + a_2 \\right )x + a_2 x^{2}')}</Latex><br></br>
+                </p>
+
           </div>
         
         </Layout>        
