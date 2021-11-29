@@ -25,3 +25,23 @@
     color: #292722;
     font-family: 'Roboto Slab', serif;
 }
+.caption{
+    font-size: 12px;
+    font-weight: bold;
+    color: #53595c;
+    font-family: 'Roboto Slab', serif;
+}
+
+.link{
+    font-size: 15px;
+    font-weight: bold;
+    color: #1e58a3;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+}
+
+.biblio{
+    font-size: 16px;
+    color: #686868;
+    font-family: 'Roboto Slab', serif;
+}

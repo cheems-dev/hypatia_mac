@@ -11,11 +11,6 @@ import styles from './tema09.module.css'
 function latexTemplate(text) {
   return `$${text}$`
 }
-const expr7_4 =
-  '$$\\begin{equation}  \\begin{pmatrix}  1 & 1 & 1 \\\\ 0 &  1 & 1 \\\\ 0 & 0 & 1 \\\\ \\end{pmatrix} \\end{equation} \\rightarrow rango 3 $$ '
-
-const expr_linear =
-  '$$\\left\\{\\begin{matrix} x = \\alpha \\\\ y =  \\alpha+ \\beta \\\\ z = \\alpha+ \\beta + \\gamma \\end{matrix} \\right. \\rightarrow \\left\\{\\begin{matrix} x = \\alpha \\\\ \\beta = y - x \\\\ \\gamma = z - \\alpha - \\beta = z - x - (y - x) = z - y \\end{matrix} \\right.  $$'
 
 const tema10 = () => {
   return (
@@ -24,263 +19,10 @@ const tema10 = () => {
         <title>Hypatia - Tema 10</title>
       </Head>
       <div className='container px-8 mx-auto m-6 rounded-md shadow-xl bg-white'>
-        {/* incio del 1 */}
-        <div>
-          <h1 className={`pb-4 ` + styles.mainTitle}>Nucleo e Imagén</h1>
-          <h3 className={`pb-4 ` + styles.defTitle}>Definición: </h3>
-          <p className={`leading-relaxed ` + styles.parrafo}>
-            Sean <Latex>{latexTemplate('U')}</Latex> y{' '}
-            <Latex>{latexTemplate('V')}</Latex> dos espacios vectoriales sobre{' '}
-            <Latex>
-              {latexTemplate(
-                '\\mathbb{K} \\left ( \\mathbb{K} = \\mathbb{R} \\ o \\ \\mathbb{C} \\right )'
-              )}
-            </Latex>
-          </p>
-          <div className='container mx-auto text-center'>
-            <Image src={ImageTeo} width={650} height={400} className={``} />
-          </div>
-          <p className={`leading-relaxed ` + styles.parrafo}>
-            Cuando <Latex>{latexTemplate('U = V')}</Latex>, diremos que{' '}
-            <Latex>{latexTemplate('T')}</Latex> es un operador lineal. <br />
-          </p>
-          <h3 className={`pb-4 ` + styles.defTitle}>Ejemplos: </h3>
-          <ol className={`list-decimal leading-relaxed ml-6 ` + styles.parrafo}>
-            <li>
-              <span>
-                <Latex>
-                  {latexTemplate('T: P_{n}(R) \\rightarrow R^{n+1}')}
-                </Latex>
-                , dada por
-                <p
-                  className={
-                    `text-center leading-relaxed ml-6 ` + styles.parrafo
-                  }
-                >
-                  <Latex>
-                    {latexTemplate(
-                      'T(\\alpha_{0} + \\alpha_{1}x + ... + \\alpha_{n}x^{n}) = (\\alpha_{0}, ..., \\alpha_{n})'
-                    )}
-                  </Latex>{' '}
-                  <br />
-                  <Latex>{latexTemplate('\\therefore  ')}</Latex> es
-                  transformacion lineal
-                </p>
-              </span>
-            </li>
-            <li>
-              Si A <Latex>{latexTemplate(' \\in M_{m*n}')}</Latex>, es una
-              matriz dada, definimos:
-              <p
-                className={`text-center leading-relaxed ml-6 ` + styles.parrafo}
-              >
-                <Latex>{latexTemplate('T: M{n*1} \\rightarrow M{m*1}')}</Latex>
-                <br />
-              </p>
-              por{' '}
-              <Latex>
-                {latexTemplate('T(X) \\in M_{n*1} = AX \\in M_{m*1}')}
-              </Latex>{' '}
-              un producto de <Latex>{latexTemplate('A')}</Latex> con{' '}
-              <Latex>{latexTemplate('X')}</Latex> , para todo{' '}
-              <Latex>{latexTemplate('X \\in M_{n*1}')}</Latex>
-              <p
-                className={`text-center leading-relaxed ml-6 ` + styles.parrafo}
-              >
-                <Latex>
-                  {latexTemplate(
-                    'T(x_{1} + x_{2}) = A(x*1+x*2) = A_{x1}+A_{x_2} = T(x_{1}) +T(x_{2})'
-                  )}
-                </Latex>
-                <Latex>
-                  {latexTemplate(
-                    'T(x_{1} + x_{2}) = A(x*1+x*2) = A_{x1}+A_{x_2} = T(x_{1}) +T(x_{2})'
-                  )}
-                </Latex>
-                <br />
-                <Latex>{latexTemplate('\\therefore T ')}</Latex> es
-                transformacion lineal
-              </p>
-            </li>
-            <li className='mb-2'>
-              <Latex>{latexTemplate('T: C([0,1 ];R) \\rightarrow R')}</Latex>{' '}
-              dada por
-              <p
-                className={`text-center leading-relaxed ml-6 ` + styles.parrafo}
-              >
-                <Latex>{latexTemplate('T(f) = \\int_{1}^{0} f(x)dx')}</Latex>
-              </p>
-              para toda funcion{' '}
-              <Latex>{latexTemplate('f \\in T: C([0,1 ];R)')}</Latex>{' '}
-              <p
-                className={`text-center leading-relaxed ml-6 ` + styles.parrafo}
-              >
-                <Latex>{latexTemplate('\\therefore T ')}</Latex> es
-                transformacion lineal
-              </p>
-            </li>
-            <li className='pt-4'>
-              <Latex>
-                {latexTemplate('T: C^{1}([0,1 ];R) \\rightarrow C([0,1 ])')}
-              </Latex>{' '}
-              dada por <Latex>{latexTemplate('T(f) = f')}</Latex> una derivada
-              de <Latex>{latexTemplate('f')}</Latex> para toda funcion{' '}
-              <Latex>{latexTemplate(' f \\in C^{1}([0,1 ];R)')}</Latex>
-              <p
-                className={`text-center leading-relaxed ml-6 ` + styles.parrafo}
-              >
-                <Latex>{latexTemplate('\\therefore T ')}</Latex> es
-                transformacion lineal dado que
-              </p>
-              <ol className={`leading-relaxed ml-6 ` + styles.parrafo}>
-                <li>
-                  {' '}
-                  <Latex>
-                    {latexTemplate(
-                      "T(f_{1} + f_{2}) = (f_{1} + f_{2})' = f_{1}' + f_{2}' = T(f_{1}) + T(f_{2})"
-                    )}
-                  </Latex>
-                </li>
-                <li>
-                  {' '}
-                  <Latex>
-                    {latexTemplate(
-                      "T(\\lambda f)= (\\lambda f)' = \\lambda f' = \\lambda T(f). "
-                    )}
-                  </Latex>{' '}
-                  <Latex>
-                    {latexTemplate(
-                      " \\forall f \\in C'([0,1];R), \\forall \\lambda \\in R"
-                    )}
-                  </Latex>
-                </li>
-              </ol>
-            </li>
-            <li>
-              <p className={`leading-relaxed ` + styles.parrafo}>
-                <Latex>{latexTemplate('T: C([0,1];R) \\rightarrow R ')}</Latex>{' '}
-                dada por <Latex>{latexTemplate(' T(x,y,z) = x+y+z+1')}</Latex>{' '}
-                Nota que{' '}
-                <Latex>{latexTemplate('T(0,0,0,0)= 1 \\neq  0')}</Latex>
-                <p
-                  className={
-                    `text-center leading-relaxed ml-6 ` + styles.parrafo
-                  }
-                >
-                  <Latex>{latexTemplate('\\therefore')}</Latex> Esto nos indica
-                  que <Latex>{latexTemplate('T')}</Latex> no es transformacion
-                  lineal
-                </p>
-              </p>
-            </li>
-          </ol>
-          <br />
-          <p className={`leading-relaxed ` + styles.parrafo}>
-            Si <Latex>$T$</Latex> fuera transformacion lineal deberiamos tener
-            para <Latex>{latexTemplate('2, T(-f) = -T(f)')}</Latex>
-            para toda funcion{' '}
-            <Latex>{latexTemplate(' f \\in C([0,1 ];R)')}</Latex>. Para ver que
-            esto no sucede, simplemente tome <Latex>f</Latex> como la función
-            constante igual a <Latex>1</Latex>. Tenemos en este caso que{' '}
-            <Latex>{latexTemplate('T(-1) = 1 = T(1) \\ne -T(1) = -1')}</Latex>
-            <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
-              <Latex>
-                {latexTemplate(
-                  'T(-1) = \\int_{1}^{0} 1dx = x\\int_{1}^{0} = 1'
-                )}
-              </Latex>
-              <br />
-              <Latex>{latexTemplate('T(1) = \\int_{1}^{0} 1dx = 1')}</Latex>
-              <br />
-              <Latex>{latexTemplate('\\therefore')}</Latex> Esto nos indica que{' '}
-              <Latex>{latexTemplate('T')}</Latex> no es transformacion lineal
-            </p>
-          </p>
-        </div>
-        {/* incio del 2 */}
-        <div>
-          <h3 className={`pb-4 ` + styles.defTitle}>Teorema: </h3>
-          <p className={`leading-relaxed ` + styles.parrafo}>
-            Sean <Latex>{latexTemplate('U')}</Latex> y{' '}
-            <Latex>{latexTemplate('V')}</Latex> dos espacios vectoriales sobre{' '}
-            <Latex>$k$</Latex>. Si{' '}
-            <Latex>{latexTemplate('\\{ u_{1}, ..., u_{n} \\} ')}</Latex>
-            es una base de <Latex>{latexTemplate('U')}</Latex> y si{' '}
-            <Latex>
-              {latexTemplate('\\{ v_{1}, ..., v_{n} \\}  \\subseteq V')}
-            </Latex>{' '}
-            , entonces existe una única transformacion lineal.
-            <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
-              <Latex>{latexTemplate('T: U \\rightarrow V')}</Latex>
-            </p>
-            tal que <Latex>{latexTemplate('T(u_{i}) = v_{i}')}</Latex>, para{' '}
-            <Latex>{latexTemplate(' i = 1 ... n')}</Latex>
-          </p>
-
-          <h3 className={`pb-4 ` + styles.defTitle}>Ejemplo 1: </h3>
-          <p></p>
-          <p className={`leading-relaxed ` + styles.parrafo}>
-            Encontrar una expresión para{' '}
-            <Latex>{latexTemplate('F(x, y, z) ')}</Latex> operador lineal{' '}
-            <Latex>
-              {latexTemplate('F: \\mathbb{R^{3}} \\rightarrow \\mathbb{R^{3}}')}
-            </Latex>{' '}
-            tal que{' '}
-            <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
-              <Latex>
-                {latexTemplate('F(1, 1, 1) =(1, 1, 0), F(0, 1, 1) =(1, 0, 1) ')}
-              </Latex>{' '}
-              y <Latex>{latexTemplate('F(0, 0, 1) =(0, 1, 1) ')}</Latex>
-            </p>
-            Observemos que{' '}
-            <Latex>
-              {latexTemplate('\\{ (1, 1, 1), (0, 1, 1), (0, 0, 1) \\}')}
-            </Latex>{' '}
-            forman una base de <Latex>{latexTemplate('\\mathbb{R^{3}}')}</Latex>
-            <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
-              <Latex>{expr7_4}</Latex>
-            </p>
-            Dado{' '}
-            <Latex>{latexTemplate('(x, y, z) \\in \\mathbb{R^{3}}')}</Latex>{' '}
-            arbitrario es posible escribir
-            <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
-              <Latex>
-                {latexTemplate(
-                  '(x, y, z) = \\alpha(1, 1, 1)+ \\beta(0,1,1) + \\gamma(0,0,1) '
-                )}
-              </Latex>
-              <br />
-              <Latex>{expr_linear}</Latex>
-            </p>
-            <Latex>
-              {latexTemplate(
-                'F(x, y, z)= F( \\alpha(1, 1, 1)) + F( \\beta(0, 1, 1))+ F( \\gamma(0, 0, 1))'
-              )}
-            </Latex>
-            <br />
-            <Latex>
-              {latexTemplate(
-                'F(x, y, z)= x * F(1, 1, 1)+ (y -x)*F(0, 1, 1) + (z -y) * F(0, 0, 1)'
-              )}
-            </Latex>
-            <br />
-            <Latex>
-              {latexTemplate(
-                'F(x, y, z)= x*(1,1,0) + (y-x)*(1,0,1)+ (z-y)*(0,1,1)'
-              )}
-            </Latex>
-            <br />
-            <Latex>
-              {latexTemplate('F(x, y, z)= (x,x,0) + (y-x,0,y-x)+ (0,z-y,z-y)')}
-            </Latex>
-            <br />
-            <Latex>{latexTemplate('F(x, y, z)= (y,x-y+z,-x+z)')}</Latex>
-          </p>
-        </div>
         {/* tercera parte */}
-        <h3 className={`pb-4 ` + styles.defTitle}>
+        <h1 className={`pb-4 ` + styles.mainTitle}>
           Núcleo e imagen de una transformacion lineal
-        </h3>
+        </h1>
         <div className='container flex justify-center my-5'>
           <iframe
             width='600'
@@ -292,7 +34,57 @@ const tema10 = () => {
             allowfullscreen
           ></iframe>
         </div>
+        {/* Definición 8.29  */}
         <p className={`leading-relaxed ` + styles.parrafo}>
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/teorema_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Lema :</h3>
+          </div>
+          
+          Sean <Latex>{latexTemplate('U')}</Latex> y
+          <Latex>{latexTemplate('V')}</Latex>
+          espacios vectoriales sobre{' '}
+          <Latex>{latexTemplate('\\mathbb{k}')}</Latex> y
+          <Latex>{latexTemplate('T: U \\rightarrow V')}</Latex> una
+          transformacion lineal. <br />
+          Si <Latex>{latexTemplate('B = \\{ u_{1}, ... , u_{n} \\}')}</Latex> es
+          una base de <Latex>{latexTemplate('U')}</Latex>, entonces{' '}
+          <Latex>{latexTemplate('\\{ T(u_{1}), ... , T(u_{n}) \\}')}</Latex>{' '}
+          generan <Latex>{latexTemplate('Im(T)')}</Latex>
+          <h3 className={`py-4 ` + styles.defTitle}>Definiciónes:</h3>
+
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/definition_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={`mt-4 pl-4 pb-4 leading-relaxed `+ styles.defTitle}>Definición 1 :</h3>
+          </div>
+
+          
+          El núcleo de una transformación lineal{' '}
+          <Latex>{latexTemplate('T: U \\rightarrow V')}</Latex>
+          el subespacio vectorial de U dado por
+          <Latex>{latexTemplate('T^{−1}({0})')}</Latex>, es decir, y el conjunto{' '}
+          <Latex>{latexTemplate('{u \\in U; T(u) = 0}')}</Latex>. Denotaremos el
+          núcleo de T por N(T)
+          
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/definition_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={`mt-4 pl-4 pb-4 leading-relaxed `+ styles.defTitle}>Definición 2 :</h3>
+          </div>
           Sean U y V dos espacios vectorales sobre{' '}
           <Latex>{latexTemplate('\\mathbb{k} ')}</Latex> y
           <Latex>{latexTemplate('T: U \\rightarrow V ')}</Latex> una
@@ -316,12 +108,75 @@ const tema10 = () => {
               </Latex>{' '}
               es llamado imagen de T.
             </li>
+            <li>
+              {' '}
+              Si <Latex>{latexTemplate('X \\subset U ')}</Latex> definimos la
+              imagen de <Latex>{latexTemplate('X')}</Latex> por{' '}
+              <Latex>{latexTemplate('T')}</Latex>como el conjunto{' '}
+              <Latex>{latexTemplate('T(X) = \\{ T(x); x \\in X \\}')}</Latex>
+            </li>
+            <li>
+              {' '}
+              Si <Latex>{latexTemplate('Y \\subset V ')}</Latex> denotamos la
+              imagen inversa de<Latex>{latexTemplate('Y')}</Latex> por{' '}
+              <Latex>{latexTemplate('T')}</Latex>como el conjunto{' '}
+              <Latex>
+                {latexTemplate('T^{-1}(Y) = \\{ u \\in U; T(u) \\in Y \\}')}
+              </Latex>
+            </li>
           </ol>
           Observe que una tranf. lineal{' '}
           <Latex>{latexTemplate('T: U \\rightarrow V ')}</Latex> es sobreyectiva{' '}
           <Latex>{latexTemplate('ImT = V')}</Latex>
-          <h3 className={`pb-4 ` + styles.defTitle}>Proposición:</h3>
-          Sean <Latex>{latexTemplate('U')}</Latex> y{' '}
+          {/* Definición 8.29  */}
+          {/* Teorema */}
+          
+
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/teorema_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Teorema del núcleo y la imagen :</h3>
+          </div>
+          1. Sean <Latex>{latexTemplate('U')}</Latex> y
+          <Latex>{latexTemplate('V')}</Latex>
+          espacios vectoriales sobre{' '}
+          <Latex>{latexTemplate('\\mathbb{k}')}</Latex> con{' '}
+          <Latex>{latexTemplate('dim_{k}U')}</Latex> finita y{' '}
+          <Latex>{latexTemplate('T: V \\rightarrow V')}</Latex> una
+          transformacion lineal{' '}
+          <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
+            <Latex>
+              {latexTemplate(
+                'dim_{\\mathbb{k}}U= dim_{\\mathbb{k}} Ker(T) +  dim_{\\mathbb{k}}Im(T) '
+              )}
+            </Latex>
+          </p>
+          {/* Teorema  */}
+          2. Sean <Latex>{latexTemplate('U')}</Latex> y{' '}
+          <Latex>{latexTemplate('V')}</Latex> espacios vectoriales{' '}
+          <Latex>{latexTemplate('T: U \\rightarrow V')}</Latex> una
+          transformación lineal. Suponga que <Latex>{latexTemplate('U')}</Latex>{' '}
+          tener una dimensión. Tenemos:{' '}
+          <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
+            <Latex>
+              {latexTemplate('dimU = dim\\mathbb{k} (T) + dimT(U)')}
+            </Latex>{' '}
+          </p>
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/proposicion_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Proposición 1 :</h3>
+          </div>
+          {' '}
+          <Latex>{latexTemplate('U')}</Latex> y{' '}
           <Latex>{latexTemplate('V')}</Latex> dos espacios vectoriales sobre{' '}
           <Latex>{latexTemplate('\\mathbb{k} ')}</Latex> y
           <Latex>{latexTemplate('T: U \\rightarrow V ')}</Latex> transf. lineal
@@ -353,7 +208,16 @@ const tema10 = () => {
               <Latex>{latexTemplate('T')}</Latex>
             </li>
           </ul>
-          <h3 className={`pb-4 ` + styles.defTitle}>Ejemplo:</h3>
+
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/ejercicio_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo:</h3>
+          </div> 
           Considere la transf. Lineal
           <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
             <Latex>
@@ -473,33 +337,230 @@ const tema10 = () => {
               </p>
             </li>
           </ol>
-          <h3 className={`pb-4 ` + styles.defTitle}>Lema</h3>
-          Sean <Latex>{latexTemplate('U')}</Latex> y
+          {/* Teorema  */}
+          {/* Proposicion*/}
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/proposicion_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Proposición 2 :</h3>
+          </div>
+          Sea <Latex>{latexTemplate('T:U \\rightarrow V')}</Latex> una
+          transformación lineal.Tenemos:
+          <ol className={`list-decimal leading-relaxed ml-6 ` + styles.parrafo}>
+            <li>
+              Si <Latex>{latexTemplate('W')}</Latex> es un subespacio vectorial
+              de <Latex>{latexTemplate('U')}</Latex>, entonces{' '}
+              <Latex>{latexTemplate('T(W)')}</Latex>un subespacio vectorial de{' '}
+              <Latex>{latexTemplate('V')}</Latex>
+            </li>
+            <li>
+              Si <Latex>{latexTemplate('W')}</Latex> es un subespacio vectorial
+              de <Latex>{latexTemplate('V')}</Latex>, entonces{' '}
+              <Latex>{latexTemplate('T^{-1}(W)')}</Latex>un subespacio vectorial
+              de <Latex>{latexTemplate('U')}</Latex>
+            </li>
+          </ol>
+          {/* Proposicion*/}
+          {/* Pruebas 1 */}
+          <h3 className={`pl-4 ` + styles.defTitle}>Prueba 1:</h3>
+          Sea W un subespacio vectorial de U. Como{' '}
+          <Latex>{latexTemplate('0 \\in W')}</Latex> vemos que{' '}
+          <Latex>{latexTemplate('0 = T(0) \\in T(W)')}</Latex>.
+          <br />
+          Si <Latex>{latexTemplate('x, y \\in T(W)')}</Latex> entonces hay
+          <Latex>{latexTemplate('x, w \\in W')}</Latex>
+          tales que <Latex>{latexTemplate(' x = T(u) \\in y =T(w)')}</Latex>.
+          Dado que W es un subespacio vectorial, tenemos que para cualquier{' '}
+          <Latex>
+            {latexTemplate('\\lambda \\in R,u + \\lambda w \\in W.')}
+          </Latex>
+          <br />
+          <Latex>
+            {latexTemplate(
+              'x + \\lambda y = T(u) + \\lambda T(w) = T(u) + T(\\lambda w) = T(u + \\lambda w) \\in T(W)'
+            )}
+          </Latex>
+          {/* Pruebas 1 */}
+          <br />
+          <h3 className={`pl-4 ` + styles.defTitle}>Prueba 2:</h3>
+          {/* Pruebas 2 */}
+          Sea W un subespacio vectorial de V. Dado que{' '}
+          <Latex>{latexTemplate('T(0) = 0 \\in W')}</Latex>, de deduce que{' '}
+          <Latex>{latexTemplate('0 \\in T^{-1}(W)')}</Latex>.
+          <br />
+          Si <Latex>{latexTemplate('x, y \\in T^{−1}(W)')}</Latex> luego{' '}
+          <Latex>{latexTemplate('T(x), T(y) \\in W')}</Latex>. Como W es un
+          subespacio vector tenemos que, para cualquier{' '}
+          <Latex>
+            {latexTemplate('\\lambda \\in R, T (x) + \\lambda T(y) \\in W')}
+          </Latex>
+          . Pero{' '}
+          <Latex>
+            {latexTemplate('\\lambda \\in R, T (x) + \\lambda T(y) \\in W')}
+          </Latex>{' '}
+          <Latex>
+            {latexTemplate('T(x + \\lambda y) = T(x) + \\lambda T(y) \\in W')}
+          </Latex>
+          y por lo tanto
+          <Latex>{latexTemplate('x + \\lambda y \\in T^{−1}(W)')}</Latex>.
+          {/* Pruebas 2 */}
+          {/* Proposición 8.30  */}
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/proposicion_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Proposición 3 :</h3>
+          </div> 
+          Sea <Latex>{latexTemplate('T: U \\rightarrow V')}</Latex> una
+          transformación lineal. T es inyecta si y solo si{' '}
+          <Latex>{latexTemplate('N(T) = \\{0\\}.')}</Latex>.
+          <h3 className={`pl-4 pb-4 ` + styles.defTitle}>Demostración:</h3>T es
+          inyectiva si y solo si la ecuación{' '}
+          <Latex>{latexTemplate('T(u) = 0')}</Latex> tiene{' '}
+          <Latex>{latexTemplate('u = 0')}</Latex> como única solución. Esto es
+          lo mismo que decir que el conjunto{' '}
+          <Latex>{latexTemplate('N(T)')}</Latex> está formado solo porel
+          elemento 0.
+          {/* Proposición 8.30  */}
+          {/* Ejercicio 8.31  */}
+          
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/ejercicio_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejercicio 1:</h3>
+          </div>
+          Sea <Latex>{latexTemplate('T \\in L(U)')}</Latex> . Muestra que{' '}
+          <Latex>{latexTemplate('T_{2} = 0')}</Latex> si y solo si{' '}
+          <Latex>{latexTemplate('T (U) \\subset N (T)')}</Latex>. Resolución:
+          <br />
+          Suponga que <Latex>{latexTemplate('T_{2} = 0')}</Latex>. Si
+          <Latex>{latexTemplate('v \\in T(U)')}</Latex> entonces hay{' '}
+          <Latex>{latexTemplate('u \\in U')}</Latex> tal que{' '}
+          <Latex>{latexTemplate('v \\in T(u)')}</Latex> y por lo tanto{' '}
+          <Latex>{latexTemplate('T(v) = T_{2}(u) = 0')}</Latex>. Por tanto,
+          <Latex>{latexTemplate('v \\in N(T)')}</Latex> . Ahora suponga que{' '}
+          <Latex>{latexTemplate('T(U) \\subset N(T)')}</Latex>. Dado{' '}
+          <Latex>{latexTemplate('u \\in U')}</Latex>, como{' '}
+          <Latex>{latexTemplate('T(u) \\in T(U) \\subset N(T)')}</Latex> ,
+          tenemos <Latex>{latexTemplate('T_{2}(u) = T(T(u)) = 0')}</Latex>.
+          {/* Ejercicio 8.31  */}
+          {/* Ejercicio 8.32  */}
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/ejercicio_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejercicio 2:</h3>
+          </div>
+          Sea <Latex>{latexTemplate('θ \\in R.')}</Latex> Encuentre el núcleo de
+          la transformación lineal
+          <Latex>{latexTemplate('T: R^{2} \\rightarrow R^{2}')}</Latex> dado por
+          <Latex>
+            {latexTemplate(
+              'T(x, y)= (x \\cos \\theta - y\\sin \\theta, x\\sin \\theta + y\\cos \\theta)'
+            )}
+          </Latex>
+          <br />
+          Resolución: Por definición,{' '}
+          <Latex>{latexTemplate('(x, y) \\in N(T)')}</Latex> si y solo si{' '}
+          <Latex>{latexTemplate('T(x, y) = (0, 0)')}</Latex> , es decir, si y
+          solo si{' '}
+          <Latex>
+            {latexTemplate(
+              '(x \\cos \\theta - y\\sin \\theta, x\\sin \\theta + y\\cos \\theta) = (0,0)'
+            )}
+          </Latex>
+          <br />
+          <Latex>
+            {latexTemplate('(x \\cos \\theta - y\\sin \\theta = 0)')}
+          </Latex>
+          ,
+          <Latex>
+            {latexTemplate(
+              '(x\\sin \\theta + y\\cos \\theta) = 0 \\rightarrow'
+            )}
+          </Latex>
+          <Latex>{latexTemplate('(x,y) = (0,0)')}</Latex>
+          <br />
+          Por lo tanto, <Latex>{latexTemplate('N(T) = {(0, 0)}')}</Latex>
+          {/* Ejercicio 8.32  */}
+          {/* Ejercicio */}
+          {/* Pregunta para el alumno */}
+          <h3 className={`p-4 ` + styles.defTitle}>Ejercicio Propuesto</h3>
+          Sea <Latex>{latexTemplate('V')}</Latex> un espacio de dimensión 1.
+          Demuestre que cualquier transformación lineal distinta de cero
+          <Latex>{latexTemplate('T: U \\rightarrow V')}</Latex> es sobreyectiva.
+          <br />
+          {/* Dado que <Latex>{latexTemplate('T \\ne 0')}</Latex>, hay{' '}
+          <Latex>{latexTemplate('u_{0} \\in U')}</Latex>
+          tal que <Latex>{latexTemplate('T(u_{0}) = 0')}</Latex> Ya que{' '}
           <Latex>{latexTemplate('V')}</Latex>
-          espacios vectoriales sobre{' '}
-          <Latex>{latexTemplate('\\mathbb{k}')}</Latex> y
-          <Latex>{latexTemplate('T: U \\rightarrow V')}</Latex> una
-          transformacion lineal. <br />
-          Si <Latex>{latexTemplate('B = \\{ u_{1}, ... , u_{n} \\}')}</Latex> es
-          una base de <Latex>{latexTemplate('U')}</Latex>, entonces{' '}
-          <Latex>{latexTemplate('\\{ T(u_{1}), ... , T(u_{n}) \\}')}</Latex>{' '}
-          generan <Latex>{latexTemplate('Im(T)')}</Latex>
-          <h3 className={`pb-4 ` + styles.defTitle}>Teorema</h3>
-          Sean <Latex>{latexTemplate('U')}</Latex> y
-          <Latex>{latexTemplate('V')}</Latex>
-          espacios vectoriales sobre{' '}
-          <Latex>{latexTemplate('\\mathbb{k}')}</Latex> con{' '}
-          <Latex>{latexTemplate('dim_{k}U')}</Latex> finita y{' '}
-          <Latex>{latexTemplate('T: V \\rightarrow V')}</Latex> una
-          transformacion lineal
-          <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
-            <Latex>
-              {latexTemplate(
-                'dim_{\\mathbb{k}}U= dim_{\\mathbb{k}} Ker(T) +  dim_{\\mathbb{k}}Im(T) '
-              )}
-            </Latex>
-          </p>
+          tiene dimensión 1, por lo que cualquier base de{' '}
+          <Latex>{latexTemplate('V')}</Latex> y está formada por un elemento y
+          dado que <Latex>{latexTemplate('T(u_{0}) \\in V')}</Latex> y no nulo
+          (por lo tanto, l.i.), él mismo forma una base de{' '}
+          <Latex>{latexTemplate('V')}</Latex>. Por lo tanto, dado{' '}
+          <Latex>{latexTemplate('v \\in V')}</Latex> existe
+          <Latex>{latexTemplate('a \\in R')}</Latex> tal que{' '}
+          <Latex>{latexTemplate('v = αT(u_{o}) = T(αu_{o})')}</Latex>, o es
+          decir, T y sobreyectiva. */}
+          {/* Ejercicio */}
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/recurso_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Recursos:</h3>
+          </div>
+          Transformación lineal como mapeo
+          <iframe
+            scrolling='no'
+            title='Kernel and image'
+            src='https://www.geogebra.org/material/iframe/id/fpmabczn/width/1280/height/556/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false'
+            width='790px'
+            height='300px'
+          >
+            {' '}
+          </iframe>
         </p>
+
+        <div className={`flex flex-row `}>
+              <Image 
+                  src="/biblio_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Bibliografía:</h3>
+          </div>
+
+        <ul className={`ml-8 pb-8 ` + styles.biblio}>
+          <li className='mb-4'>
+            [1] Dr.Judith Hayde Cruz Torres (2021). Curso de Matematica Aplicada
+            a la Computación , UNSA
+          </li>
+          <li className='mb-4'>
+            [2] Zani, S. L. (n.d.). Álgebra Linear. ICMC - USP.
+          </li>
+          <li className='mb-4'>
+            [3] Dovid Fein (2020). Kernel and image. Geogebra
+          </li>
+        </ul>
       </div>
     </Layout>
   )

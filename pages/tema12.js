@@ -51,7 +51,7 @@ let expr26 = "$F: \\mathbb{R}^3  \\rightarrow \\mathbb{R}^3 \\text{, con } F(x,y
 let expr27 = "$B = \\left \\{ (1,0,0), (0,1,0), (0,0,1) \\right \\}$"
 let expr28 = "$$ F(1,0,0) = (1,0,0) \\\\ F(0,1,0) = (-3,1,0) \\\\ F(0,0,1) = (-2,-4,-1) $$"
 
-let expr29 = "$$ [F]_{B} = \\begin{bmatrix} 1 & -3 & -2\\\\  0 & 1 & -4\\\\  0 & 0 & 1 \\end{bmatrix}$$"
+let expr29 = "$$ [F]_{B} = \\begin{pmatrix} 1 & -3 & -2\\\\  0 & 1 & -4\\\\  0 & 0 & 1 \\end{pmatrix}$$"
 let expr30 = "$[F^{-1}]_{B} = [F]_{B} ^{-1}$"
 
 const tema12 = () => {
@@ -352,7 +352,7 @@ const tema12 = () => {
                             
                             Podemos hacer uso de la propiedad de <Latex>{expr30}</Latex>. Es por ello que determinamos: 
                             
-                            <Latex>{LaTemp('[F]_{B} ^{-1} = \\begin{bmatrix} 0 & 3 & 14\\\\  0 & 1 & 4\\\\  0 & 0 & 1 \\end{bmatrix}')}</Latex>
+                            <Latex>{LaTemp('[F]_{B} ^{-1} = \\begin{pmatrix} 0 & 3 & 14\\\\  0 & 1 & 4\\\\  0 & 0 & 1 \\end{pmatrix}')}</Latex>
 
                             Así sabemos que en términos del isomorfismo <Latex>{laTemp('F^{-1}')}</Latex> la base canónica <Latex>{laTemp('B')}</Latex> se puede expresar como:
 
