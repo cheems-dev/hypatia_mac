@@ -87,12 +87,9 @@ const tema14 = () => {
 
 
                 <p className={`leading-relaxed `+styles.parrafo}>
-                    Considere un operador lineal  <Latex>{ expr12}</Latex>  y un subespacio <Latex>{ expr13}</Latex> . Si
-                    la imagen de <Latex>{expr15}</Latex> por <Latex>{expr14}</Latex> es un subconjunto
+                    Considere un operador lineal  <Latex>{ expr12}</Latex>  y un subespacio <Latex>{ expr13}</Latex> . Si la imagen de <Latex>{expr14}</Latex> en <Latex>{expr15}</Latex> para un subconjunto
                     (en realidad es un subespacio vector) de <Latex>{expr15}</Latex>decimos que <Latex>{expr15}</Latex>
-                    es un subespacio invariante por <Latex>{expr14}</Latex>, es decir,
-                    <Latex>{expr16}</Latex>. Por lo tanto, la restricción de <Latex>{expr14}</Latex> al subespacio <Latex>{expr15}</Latex>, denotado por
-                    <Latex>{expr17}</Latex>, pertenece a <Latex>{expr18}</Latex>. Como veremos en el próximo capítulo, esto hará que sea más fácil
+                    es un subespacio invariante de <Latex>{expr14}</Latex>, es decir, <Latex>{expr16}</Latex>. Por lo tanto, la restricción de <Latex>{expr14}</Latex> al subespacio <Latex>{expr15}</Latex>, denotado por <Latex>{expr17}</Latex>, pertenece a <Latex>{expr18}</Latex>. Como veremos en el próximo capítulo, esto hará que sea más fácil
                     a menudo la comprensión de cómo actúa un operador lineal, ya que sin
                     duda, es más sencillo estudiarlo en subespacios de menores dimensiones.
 
@@ -102,13 +99,7 @@ const tema14 = () => {
                 <p className={`leading-relaxed `+styles.parrafo}>
                 
                     Es obvio que los subespacios <Latex>{expr19}</Latex> y<Latex>{expr2}</Latex> son invariantes por cualquier <Latex>{expr12}</Latex>. Veamos qué debe suceder para que exista un subespacio.
-                    invariante de la dimensión uno. Obviamente, necesitamos <Latex>{expr2}</Latex> <Latex>{expr20}</Latex> <Latex>{expr19}</Latex>. Igual que
-                    cada subespacio de dimensión uno es generado por un vector distinto de cero, vemos
-                    que <Latex>{expr21}</Latex>,   <Latex>{expr28}</Latex>  e invariante por <Latex>{expr14}</Latex> si y solo si para todo <Latex>{expr22}</Latex>
-                
-                    tenemos <Latex>{expr23}</Latex>, es decir, si hay <Latex>{expr24}</Latex> tal que <Latex>{expr25}</Latex>, que
-                    para <Latex>{expr26}</Latex> y equivalente a  existente<Latex>{expr27}</Latex>, para algun
-                    <Latex>{expr28}</Latex>. Esto sugiere la siguiente definición:
+                    invariante de la dimensión uno. Obviamente, necesitamos <Latex>{expr2}</Latex> <Latex>{expr20}</Latex> <Latex>{expr19}</Latex>. Esto sugiere la siguiente definición:
                 </p>
 
                 <div className={`flex flex-row `}>
@@ -137,7 +128,7 @@ const tema14 = () => {
                     <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo 1:</h3>
                 </div>
                 <p className={`leading-relaxed `+styles.parrafo}>
-                    La transformación identidad <Latex>{laT('Id: U \\rightarrow U')}</Latex> definida por <Latex>{laT('Id(U) = u')}</Latex> tiene como autovector (vector propio) a cualesquiera vector no nulo <Latex>{laT('u \\in U')}</Latex> puesto que <Latex>{laT('\\exists 1 \\in \\mathbb{K}')}</Latex> tal que:
+                    La transformación identidad <Latex>{laT('Id: U \\rightarrow U')}</Latex> definida por <Latex>{laT('Id(u) = u')}</Latex> tiene como autovector (vector propio) a cualesquiera vector no nulo <Latex>{laT('u \\in U')}</Latex> puesto que <Latex>{laT('\\exists 1 \\in \\mathbb{K}')}</Latex> tal que:
 
                     <Latex>{LaT('Id(u) = u = 1u \\\\ \\Rightarrow Id(u) = 1u')}</Latex>
                 </p>
@@ -274,7 +265,7 @@ const tema14 = () => {
                                 <Latex>{laT('V(2)=\\left \\{ (x,y) \\in \\mathbb{R}^{2}:y=2x \\right \\}=\\left \\{ x(1,2) : x \\in \\mathbb{R} \\right \\}=[(1,2)]')}</Latex>
                                 </p>
                                 <p className={`leading-relaxed ` + styles.parrafo}>
-                                Con  <Latex>{laT('dim_{\\mathbb{R}} V(-2)=1')}</Latex>
+                                Con  <Latex>{laT('dim_{\\mathbb{R}} V(2)=1')}</Latex>
                                 </p>
 
                         </li>
@@ -319,7 +310,7 @@ const tema14 = () => {
                                 <Latex>{LaT('V(0) = \\left \\{ (x,y,z) \\in \\mathbb{R}^3; (x,y,z) = (0,0,0) \\right \\} = [(0,0,1)]')}</Latex>
                                 Así la multiplicidad geométrica de <Latex>{laT('\\lambda_1 = 0')}</Latex> es 1.
 
-                                <Latex>{LaT('V(0) = \\left \\{ (x,y,z) \\in \\mathbb{R}^3; (x,y,z) = (x,y,z) \\right \\}  \\\\ =  \\left \\{ (x,y,z) \\in \\mathbb{R}^3; x = z \\right \\} = [(0,1,0), (1,0,1)]')}</Latex>
+                                <Latex>{LaT('V(1) = \\left \\{ (x,y,z) \\in \\mathbb{R}^3; (x,y,z) = (x,y,z) \\right \\}  \\\\ =  \\left \\{ (x,y,z) \\in \\mathbb{R}^3; x = z \\right \\} = [(0,1,0), (1,0,1)]')}</Latex>
                                 Así la multiplicidad geométrica de <Latex>{laT('\\lambda_2 = 1')}</Latex> es 2.
 
                             </p>
@@ -349,7 +340,7 @@ const tema14 = () => {
                         La matriz <Latex>{laT('A')}</Latex> puede cambiarse ingresando sus coeficientes en las casillas de control. Luego Actualizar Vistas.
                     </p>
 
-                    {/* <iframe className="" scrolling="no" title="Autovalores y autovectores. " src="https://www.geogebra.org/material/iframe/id/yb9ts3kg/width/1000/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="900px" height="400px"> </iframe> */}
+                    <iframe className="" scrolling="no" title="Autovalores y autovectores. " src="https://www.geogebra.org/material/iframe/id/yb9ts3kg/width/1000/height/500/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="900px" height="400px"> </iframe>
 
                     <div className={`` + styles.caption}>
                         Recurso Geogebra para visualizar los autovectores. Fuente: Tomado de <a className={styles.link} href="https://www.geogebra.org/m/zd2hwtsg" target="_blank">Laura del Río, Viviana Angélica Costa</a>.
@@ -365,18 +356,18 @@ const tema14 = () => {
                         width={60}
                         height={60}
                     />
-                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Recurso Wolfram:</h3>
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Recurso Python:</h3>
                 </div>
                 
                 <div className="container mx-auto m-6 rounded-md text-gray-500">
                     <p className={`leading-relaxed ` + styles.parrafo}>
-                        El presente recurso Wolfram Widget nos permite determinar el proceso de diagonalización de una matriz, ingresa la matriz en la casilla de entrada y el programa realiza el proceso de descomposición de Jordan.
+                        El presente recurso Python nos permite obtener los autovalores y autovectores de una matriz <Latex>{laT('A')}</Latex> de forma más sencilla.
                     </p>
 
-                    {/* <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@requiemm/eigensystem?embed=true"></iframe> */}
+                    <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@requiemm/eigensystem?embed=true"></iframe>
 
                     <div className={`` + styles.caption}>
-                        Recurso Wolfram para determinar si una matriz es diagonalizable mediante el proceso de descomposición de Jordan. Fuente: Tomado de <a className={styles.link} href="https://www.wolframalpha.com/widgets/view.jsp?id=951e83beaab8a6a6864e8cee51fa87d0" target="_blank">@YouMath.it</a>.
+                        Recurso Python para hallar los autovalores y autovectores de una matriz. Fuente: Elaboración propia.
                     </div>
                 </div>
 

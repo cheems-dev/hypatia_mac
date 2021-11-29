@@ -29,3 +29,17 @@
     font-family: 'Nunito', sans-serif;
     margin-bottom: 8px;
 }
+.caption{
+    font-size: 12px;
+    font-weight: bold;
+    color: #53595c;
+    font-family: 'Roboto Slab', serif;
+}
+
+.link{
+    font-size: 15px;
+    font-weight: bold;
+    color: #1e58a3;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+}
