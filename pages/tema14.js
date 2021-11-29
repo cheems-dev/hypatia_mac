@@ -248,29 +248,84 @@ const tema14 = () => {
                                 Sistema homogeneo.
 
                                 <p className={`leading-relaxed ` + styles.parrafo}>
-                                    <Latex>{laT('\\begin{pmatrix}-\\lambda  & 1\\\\  4 & -\\lambda \\end{pmatrix}')}</Latex>
-                                    <Latex>{laT('\\begin{pmatrix} x\\\\  y \\end{pmatrix}')}</Latex>=
-                                    <Latex>{laT('\\begin{pmatrix} 0\\\\  0 \\end{pmatrix}')}</Latex>
+                                <Latex>{laT('\\begin{pmatrix}-\\lambda  & 1\\\\  4 & -\\lambda \\end{pmatrix}')}</Latex>
+                                <Latex>{laT('\\begin{pmatrix} x\\\\  y \\end{pmatrix}')}</Latex>=
+                                <Latex>{laT('\\begin{pmatrix} 0\\\\  0 \\end{pmatrix}')}</Latex>
                                 No posee solucion inicial
                                 </p>
                                 <p className={`leading-relaxed ` + styles.parrafo}>
-                                    Es decir <Latex>{laT('det \\begin{pmatrix}-\\lambda  & 1\\\\  4 & -\\lambda \\end{pmatrix}=0')}</Latex>
-                                    <Latex>{laT('\\lambda ^{2}-4 \\Rightarrow \\left ( \\lambda -2 \\right )\\left ( \\lambda +2 \\right )=0 \\Rightarrow \\lambda _{1}=-2 \\text{ y } \\lambda _{2}=2')}</Latex>
+                                Es decir <Latex>{laT('det \\begin{pmatrix}-\\lambda  & 1\\\\  4 & -\\lambda \\end{pmatrix}=0')}</Latex>
+                                <Latex>{laT('\\lambda ^{2}-4 \\Rightarrow \\left ( \\lambda -2 \\right )\\left ( \\lambda +2 \\right )=0 \\Rightarrow \\lambda _{1}=-2 \\text{ y } \\lambda _{2}=2')}</Latex>
+                                </p>
+                                <p className={`leading-relaxed ` + styles.parrafo}>
+                                Asi <Latex>{laT('\\lambda _{1}=-2 \\text{ y } \\lambda _{2}=2')}</Latex> son los unicos autovalores de T. Luego
                                 </p>
 
                                 <p className={`leading-relaxed ` + styles.parrafo}>
-                                    <Latex>{laT('V(-2) = \\left \\{ \\left( x,y \\right) \\in \\mathbb{R}^{2} :T \\left( x,y \\right)=2 \\left( x,y \\right) \\right \\}')}</Latex>
-                                
-
-                                    <Latex>{laT('=\\left \\{ \\left ( x,y \\right ) \\in \\mathbb{R}^{2} : \\left ( y,4x \\right )=\\left ( -2x,-2y \\right )\\right \\} ')}</Latex>
-                                 </p>
-                                
+                                <Latex>{laT('V\\left ( -2 \\right )= \\left \\{ \\left ( x,y \\right ) \\in \\mathbb{R}^{2} :T\\left ( x,y \\right )=2\\left ( x,y \\right )\\right \\}=\\left \\{ \\left ( x,y \\right ) \\in \\mathbb{R}^{2} : \\left ( y,4x \\right )=\\left ( -2x,-2y \\right )\\right \\}')}</Latex>
+                               
+                                <Latex>{laT('V\\left ( -2 \\right )= \\left \\{ \\left ( x,y \\right ) \\in \\mathbb{R}^{2} :   y=-2x\\right \\}=\\left \\{ \\left ( x,-2x \\right ):x\\in \\mathbb{R} \\right \\}=\\left [ \\left ( 1,-2 \\right ) \\right ]')}</Latex>
+                                </p>
+                                <p className={`leading-relaxed ` + styles.parrafo}>
+                                Con  <Latex>{laT('dim_{\\mathbb{R}} V(-2)=1')}</Latex>, Ademas 
+                                <Latex>{laT('V(2)=\\left \\{ (x,y) \\in \\mathbb{R}^{2}:T(x,y)=2(x,y) \\right \\}')}</Latex>
+                                </p>
+                                <p className={`leading-relaxed ` + styles.parrafo}>
+                                <Latex>{laT('V(2)=\\left \\{ (x,y) \\in \\mathbb{R}^{2}:y=2x \\right \\}=\\left \\{ x(1,2) : x \\in \\mathbb{R} \\right \\}=[(1,2)]')}</Latex>
+                                </p>
+                                <p className={`leading-relaxed ` + styles.parrafo}>
+                                Con  <Latex>{laT('dim_{\\mathbb{R}} V(-2)=1')}</Latex>
+                                </p>
 
                         </li>
                     </ul>
                 </div>
 
+                {/*Ejemplo 2*/}
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/ejercicio_icon.png"
+                        alt="Definicion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo 3:</h3>
+                </div>
+                <p className={`leading-relaxed `+styles.parrafo}>
+                    Sea <Latex>{laT('T: \\mathbb{R}^3 \\rightarrow \\mathbb{R}^3 ')}</Latex> dada por <Latex>{laT('T(x,y,z) = (x, y, z)')}</Latex>. Determine los autovalores de <Latex>{laT('T')}</Latex> y los espacios propios asociados con ellos y la multiplicidad geométrica de cada autovalor.
+                </p>
+                <div className="ml-8 leading-relaxed">
+                    <h4 className={` `+styles.solTitle}>Solución: </h4>
+                    <ul>
+                        <li>
+                            <p className={`leading-relaxed ` + styles.parrafo}>
+                                <span className="italic">i. </span> Vea que si <Latex>{laT('\\lambda')}</Latex> es un autovalor de  <Latex>{laT('T')}</Latex> entonces debe existir un <Latex>{laT('(x,y,z) \\neq (0,0,0)')}</Latex> tal que  <Latex>{laT('T\\left ( x,y,z \\right )= \\lambda \\left ( x,y,z \\right )')}</Latex>, esto es lo mismo a decir que existe un <Latex>{laT('(x,y,z) \\neq (0,0,0)')}</Latex> tal que <Latex>{laT('\\left ( x,y,z \\right )=  \\left ( \\lambda x, \\lambda y, \\lambda z \\right )')}</Latex>, lo que equivale al sistema:
 
+                                <Latex>{LaT('\\left\\{\\begin{matrix} (1-\\lambda)x = 0\\\\  (1-\\lambda)y = 0\\\\  \\lambda z - x = 0 \\end{matrix}\\right.')}</Latex>
+
+                                Que posee una solución no trivial, por que la determinante de la matriz:
+
+                                <Latex>{LaT('\\begin{pmatrix} 1-\\lambda & 0 & 0\\\\  0 & 1-\\lambda & 0 \\\\  -1 & 0  & \\lambda \\end{pmatrix}')}</Latex>
+
+                                es igual a cero. Como la determinante es <Latex>{laT('\\lambda (1-\\lambda)^2')}</Latex> los únicos autovalores de <Latex>{laT('T')}</Latex> son <Latex>{laT('\\lambda_1 = 0')}</Latex> y <Latex>{laT('\\lambda_2 = 1')}</Latex>.
+
+                            </p>
+                        </li>
+
+                        <li>
+                            <p className={`leading-relaxed ` + styles.parrafo}>
+                                <span className="italic">ii. </span> En cuanto a los subespacios propios, tenemos que:
+
+                                <Latex>{LaT('V(0) = \\left \\{ (x,y,z) \\in \\mathbb{R}^3; (x,y,z) = (0,0,0) \\right \\} = [(0,0,1)]')}</Latex>
+                                Así la multiplicidad geométrica de <Latex>{laT('\\lambda_1 = 0')}</Latex> es 1.
+
+                                <Latex>{LaT('V(0) = \\left \\{ (x,y,z) \\in \\mathbb{R}^3; (x,y,z) = (x,y,z) \\right \\}  \\\\ =  \\left \\{ (x,y,z) \\in \\mathbb{R}^3; x = z \\right \\} = [(0,1,0), (1,0,1)]')}</Latex>
+                                Así la multiplicidad geométrica de <Latex>{laT('\\lambda_2 = 1')}</Latex> es 2.
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
                 
 
                 {/* RECURSO GEOGEBRA*/}
