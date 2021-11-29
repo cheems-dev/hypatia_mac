@@ -36,7 +36,16 @@ const tema10 = () => {
         </div>
         {/* Definición 8.29  */}
         <p className={`leading-relaxed ` + styles.parrafo}>
-          <h3 className={`pb-4 ` + styles.defTitle}>Lema</h3>
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/teorema_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Lema :</h3>
+          </div>
+          
           Sean <Latex>{latexTemplate('U')}</Latex> y
           <Latex>{latexTemplate('V')}</Latex>
           espacios vectoriales sobre{' '}
@@ -48,14 +57,34 @@ const tema10 = () => {
           <Latex>{latexTemplate('\\{ T(u_{1}), ... , T(u_{n}) \\}')}</Latex>{' '}
           generan <Latex>{latexTemplate('Im(T)')}</Latex>
           <h3 className={`py-4 ` + styles.defTitle}>Definiciónes:</h3>
-          <h3 className={`pl-4 ` + styles.defTitle}>Definición 1:</h3>
+
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/definition_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={`mt-4 pl-4 pb-4 leading-relaxed `+ styles.defTitle}>Definición 1 :</h3>
+          </div>
+
+          
           El núcleo de una transformación lineal{' '}
           <Latex>{latexTemplate('T: U \\rightarrow V')}</Latex>
           el subespacio vectorial de U dado por
           <Latex>{latexTemplate('T^{−1}({0})')}</Latex>, es decir, y el conjunto{' '}
           <Latex>{latexTemplate('{u \\in U; T(u) = 0}')}</Latex>. Denotaremos el
           núcleo de T por N(T)
-          <h3 className={`pl-4 ` + styles.defTitle}>Definición 2:</h3>
+          
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/definition_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={`mt-4 pl-4 pb-4 leading-relaxed `+ styles.defTitle}>Definición 2 :</h3>
+          </div>
           Sean U y V dos espacios vectorales sobre{' '}
           <Latex>{latexTemplate('\\mathbb{k} ')}</Latex> y
           <Latex>{latexTemplate('T: U \\rightarrow V ')}</Latex> una
@@ -101,9 +130,17 @@ const tema10 = () => {
           <Latex>{latexTemplate('ImT = V')}</Latex>
           {/* Definición 8.29  */}
           {/* Teorema */}
-          <h3 className={`py-4 ` + styles.defTitle}>
-            Teorema del núcleo y la imagen
-          </h3>
+          
+
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/teorema_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Teorema del núcleo y la imagen :</h3>
+          </div>
           1. Sean <Latex>{latexTemplate('U')}</Latex> y
           <Latex>{latexTemplate('V')}</Latex>
           espacios vectoriales sobre{' '}
@@ -129,7 +166,16 @@ const tema10 = () => {
               {latexTemplate('dimU = dim\\mathbb{k} (T) + dimT(U)')}
             </Latex>{' '}
           </p>
-          <h3 className={`py-4 ` + styles.defTitle}>Proposición 1: </h3>{' '}
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/proposicion_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Proposición 1 :</h3>
+          </div>
+          {' '}
           <Latex>{latexTemplate('U')}</Latex> y{' '}
           <Latex>{latexTemplate('V')}</Latex> dos espacios vectoriales sobre{' '}
           <Latex>{latexTemplate('\\mathbb{k} ')}</Latex> y
@@ -162,7 +208,16 @@ const tema10 = () => {
               <Latex>{latexTemplate('T')}</Latex>
             </li>
           </ul>
-          <h3 className={`pb-4 ` + styles.defTitle}>Ejemplo:</h3>
+
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/ejercicio_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo:</h3>
+          </div> 
           Considere la transf. Lineal
           <p className={`text-center leading-relaxed ml-6 ` + styles.parrafo}>
             <Latex>
@@ -284,7 +339,15 @@ const tema10 = () => {
           </ol>
           {/* Teorema  */}
           {/* Proposicion*/}
-          <h3 className={`pb-4 ` + styles.defTitle}>Proposición 2:</h3>
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/proposicion_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Proposición 2 :</h3>
+          </div>
           Sea <Latex>{latexTemplate('T:U \\rightarrow V')}</Latex> una
           transformación lineal.Tenemos:
           <ol className={`list-decimal leading-relaxed ml-6 ` + styles.parrafo}>
@@ -346,7 +409,15 @@ const tema10 = () => {
           <Latex>{latexTemplate('x + \\lambda y \\in T^{−1}(W)')}</Latex>.
           {/* Pruebas 2 */}
           {/* Proposición 8.30  */}
-          <h3 className={`pb-4 ` + styles.defTitle}>Proposición 3 :</h3>
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/proposicion_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Proposición 3 :</h3>
+          </div> 
           Sea <Latex>{latexTemplate('T: U \\rightarrow V')}</Latex> una
           transformación lineal. T es inyecta si y solo si{' '}
           <Latex>{latexTemplate('N(T) = \\{0\\}.')}</Latex>.
@@ -359,7 +430,16 @@ const tema10 = () => {
           elemento 0.
           {/* Proposición 8.30  */}
           {/* Ejercicio 8.31  */}
-          <h3 className={`pl-4 pb-4 ` + styles.defTitle}>Ejercicio 1</h3>
+          
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/ejercicio_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejercicio 1:</h3>
+          </div>
           Sea <Latex>{latexTemplate('T \\in L(U)')}</Latex> . Muestra que{' '}
           <Latex>{latexTemplate('T_{2} = 0')}</Latex> si y solo si{' '}
           <Latex>{latexTemplate('T (U) \\subset N (T)')}</Latex>. Resolución:
@@ -376,7 +456,15 @@ const tema10 = () => {
           tenemos <Latex>{latexTemplate('T_{2}(u) = T(T(u)) = 0')}</Latex>.
           {/* Ejercicio 8.31  */}
           {/* Ejercicio 8.32  */}
-          <h3 className={`pl-4 pt-4 ` + styles.defTitle}>Ejercicio 2:</h3>
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/ejercicio_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejercicio 2:</h3>
+          </div>
           Sea <Latex>{latexTemplate('θ \\in R.')}</Latex> Encuentre el núcleo de
           la transformación lineal
           <Latex>{latexTemplate('T: R^{2} \\rightarrow R^{2}')}</Latex> dado por
@@ -430,7 +518,15 @@ const tema10 = () => {
           <Latex>{latexTemplate('v = αT(u_{o}) = T(αu_{o})')}</Latex>, o es
           decir, T y sobreyectiva. */}
           {/* Ejercicio */}
-          <h3 className={`pl-4 pt-4 ` + styles.defTitle}>Recursos:</h3>
+          <div className={`flex flex-row `}>
+              <Image 
+                  src="/recurso_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Recursos:</h3>
+          </div>
           Transformación lineal como mapeo
           <iframe
             scrolling='no'
@@ -443,7 +539,15 @@ const tema10 = () => {
           </iframe>
         </p>
 
-        <h3 className={`pl-4 pt-4 ` + styles.defTitle}>Bibliografía:</h3>
+        <div className={`flex flex-row `}>
+              <Image 
+                  src="/biblio_icon.png"
+                  alt="Definicion"
+                  width={60}
+                  height={60}
+              />
+              <h3 className={` mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Bibliografía:</h3>
+          </div>
 
         <ul className={`ml-8 pb-8 ` + styles.biblio}>
           <li className='mb-4'>
