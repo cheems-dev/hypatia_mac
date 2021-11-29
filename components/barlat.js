@@ -42,6 +42,21 @@ const Barlat = (props) => {
                         <a>Autovectores y autovalores</a>
                     </Link>
                 </li>
+                <li className={styles.itemContent}>
+                    <Link href="/tema15">
+                        <a>Matrices semejantes y diagonalización</a>
+                    </Link>
+                </li>
+                <li className={styles.itemContent}>
+                    <Link href="/tema16">
+                        <a>Matrices simétricas y diagonalización ortogonal</a>
+                    </Link>
+                </li>
+                <li className={styles.itemContent}>
+                    <Link href="/tema17">
+                        <a>La descomposición de valor singular</a>
+                    </Link>
+                </li>
             </ul>
         </div>
     )
