@@ -498,6 +498,8 @@ const tema09 = () => {
                 la multiplicacion escalar. Para tal fin sean <Latex>{latexTemplate('v = \\left ( v_1,v_2 \\right ) y \\ u = \\left ( u_1, u_2 \\right ) ')}</Latex>
                 dos vectores en <Latex>{latexTemplate('\\mathbb{R}^{2}')}</Latex> y sea c cualquier numero real entonces:
 
+                <Latex>{latexTemplate('$T\\left ( v_1,v_2 \\right ) = \\left ( v_1 - v_2, v_1 + 2v_2\\right )$')}</Latex>
+
                 Dado que : <Latex>{latexTemplate('$u+v = \\left ( u_1,u_2 \\right ) + \\left ( v_1,v_2 \\right ) = \\left ( u_1 +v_1, u_2+v_2 \\right )$')}</Latex>
                 <Latex>{latexTemplate('$T\\left ( u+v \\right ) = T\\left ( u_1+v_1,u_2+v_2 \\right )$')}</Latex>
                 <Latex>{latexTemplate('$T\\left ( u+v \\right ) = \\left ( \\left ( u_1 + v_1 \\right ) -\\left ( u_2 + v_2 \\right ), \\left ( u_1 + v_1 \\right ) + 2\\left ( u_2 + v_2 \\right ) \\right )$')}</Latex>
