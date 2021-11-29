@@ -31,7 +31,7 @@ let expr14 = "$$Ker(T) = \\left\\{ (x,y,z) \\in \\mathbb{R}^3 : T(x,y,z) = (0,0,
 let expr15 = "$$\\Rightarrow y=x, z=x \\Rightarrow Ker(T) = \\left\\{ (x,x,x) : x \\in \\mathbb{R} \\right\\} \\\\ \\Rightarrow Ker(T) = [(1,1,1)] \\neq \\left\\{ (0,0,0) \\right\\} \\\\ \\Rightarrow T \\text{ no es inyectiva, por lo tanto no es automorfismo}$$"
 
 let expr16 = "$F: U \\rightarrow V$"
-let expr17 = "$v \\in V, \\exists ! u_{v} \in U$"
+let expr17 = "$v \\in V, \\exists ! u_{v} \\in U$"
 let expr18 = "$F(u_{v}) = v$"
 let expr19 = "$G: V \\rightarrow U$"
 let expr20 = "$$ G(v) = u_{v}$$"
@@ -275,7 +275,17 @@ const tema12 = () => {
                     Dos espacios vectoriales con la misma dimensión finita son isomorfos.
                 </p>
 
-                <h3 className={`mt-4 pb-4 `+ styles.defTitle}>Corolario:</h3>
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/corolario_icon.png"
+                        alt="Corolario"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.defTitle}>Corolario:</h3>
+                </div>
+
+                
                 <p className={`leading-relaxed ` + styles.parrafo}>
                     Todo <Latex>{expr23}</Latex>-espacio vectorial (espacio vectorial sobre <Latex>{expr23}</Latex>) de dimensión <Latex>$n \geq 1$</Latex> es isomorfo a <Latex>{expr25}</Latex>.
                 </p>
