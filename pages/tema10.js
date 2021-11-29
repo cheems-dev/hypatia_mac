@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Latex from 'react-latex-next'
 import Layout from '../components/layout'
-import ImageTeo from '../public/image/01_latex.png'
+import ImageTeo from '../public/image/01_latex.png' 
 import ImageIm from '../public/image/02_latex.png'
 import styles from './tema09.module.css'
 
