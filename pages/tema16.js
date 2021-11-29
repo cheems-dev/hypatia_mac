@@ -34,7 +34,8 @@ let expr7_7="$$O=\\frac{1}{\\sqrt{5}} \\begin{bmatrix}  -2 & 1 \\\\ 1 & 2 \\\\ \
 
 let expr8="$T \\in \\mathscr{L}(U)$";
 let expr8_1="$a_{i,j}=a_{ji},\\forall i,j$";
-let expr8_2="$A \in M_n(\\mathbb{C})$";
+let expr8_2="$A \\in M_n(\\mathbb{C})$";
+let expr8_3="$[T]_b=(a_{ij})_{i,j}$";
 const tema16 = () => {
     return (
         <Layout>
@@ -74,7 +75,7 @@ const tema16 = () => {
 
                 
                 <p className={`leading-relaxed ` + styles.parrafo}>
-                    Sean <Latex>$V$</Latex> un espacio vectorial de dimensión finita y <Latex>$B$</Latex> una base ortonormal de <Latex>$V$</Latex>. si <Latex>{expr8}</Latex> es un
+                    Sean <Latex>$V$</Latex> un espacio vectorial de dimensión finita y <Latex>$B$</Latex> una base ortonormal de <Latex>$V$</Latex>. si <Latex>{expr8_3}</Latex> entonces <Latex>{expr8}</Latex> es un
                     operador lineal auto adjunto y si <Latex>{expr8_1}</Latex>. En particular los elementos de la diagonal de <Latex>$[T]_B$</Latex> sin números reales.
 
                 </p>
