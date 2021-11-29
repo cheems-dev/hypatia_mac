@@ -565,8 +565,8 @@ const tema09 = () => {
                 5) <Latex>{latexTemplate('T: R^{3} \\rightarrow R^{3}. T\\left ( x,y,z \\right ) = \\left ( x+y,x-y,z \\right )')}</Latex><br></br>
                 6) <Latex>{latexTemplate('T: R^{3} \\rightarrow R^{3}. T\\left ( x,y,z \\right ) = \\left ( x+1,y+1,z+1 \\right )')}</Latex><br></br>
                 7) <Latex>{latexTemplate('T: R^{2} \\rightarrow R^{3}. T\\left ( x,y \\right ) = \\left ( x^{2},xy,y^{2} \\right ) ')}</Latex><br></br>
-                8) <Latex>{latexTemplate('T:M_{2,2} \\rightarrow R, t\\left ( A \\right ) = a+b+c+d, A=\\begin{bmatrix}a & b\\\\ c & d\\end{bmatrix}')}</Latex><br></br>
-                9) <Latex>{latexTemplate('T:M_{3,3} \\rightarrow M_{3,3}, T\\left ( A \\right ) = \\begin{bmatrix}0 & 0 & 1\\\\ 0 & 1 & 0\\\\ 1 & 0 & 0\\end{bmatrix}A')}</Latex><br></br>
+                8) <Latex>{latexTemplate('T:M_{2,2} \\rightarrow R, t\\left ( A \\right ) = a+b+c+d, A=\\begin{pmatrix}a & b\\\\ c & d \\end{pmatrix}')}</Latex><br></br>
+                9) <Latex>{latexTemplate('T:M_{3,3} \\rightarrow M_{3,3}, T\\left ( A \\right ) = \\begin{pmatrix}0 & 0 & 1 \\\\ 0 & 1 & 0 \\\\ 1 & 0 & 0\\end{pmatrix}A')}</Latex><br></br>
                 10) <Latex>{latexTemplate('T:P_2 \\rightarrow P_2, T\\left ( a_0 + a_1 x+ a_2 x^{2} \\right ) = \\left ( a_0 + a_1 + a_2 \\right ) + \\left ( a_1 + a_2 \\right )x + a_2 x^{2}')}</Latex><br></br>
                 </p>
 
