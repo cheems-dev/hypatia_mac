@@ -571,7 +571,27 @@ const tema09 = () => {
                 </p>
 
           </div>
-        
+
+          <div className={`flex flex-row `}>
+                    <Image 
+                        src="/biiblio_icon.png"
+                        alt="Bibliografía"
+                        width={60}
+                        height={60}
+                    />
+                    <h2 className={`mt-4 ` + styles.submainTitle}>Bibliografía: </h2>
+          </div>
+                <ul className={`ml-8 pb-8 ` + styles.biblio}>
+                    <li>
+                        [1] Coelho, F. U. (2001). Curso de Álgebra Linear, Um Vol. 34. Edusp.
+                    </li>
+                    <li>
+                        [2] Ron Larson, F. U. (2016) Fundamentos de Álgebra Lineal, 7ª Ed. Cengage Learning.
+                    </li>
+                    <li className="mb-4">
+                        [3] Zani, S. L. (n.d.). Álgebra Linear. ICMC - USP.
+                    </li>
+                </ul>
         </Layout>        
     );
 }
