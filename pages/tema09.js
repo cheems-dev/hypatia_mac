@@ -195,9 +195,6 @@ const tema09 = () => {
                 </ul>
 
 
-            
-
-
             <div className={`flex flex-row `}>
                     <Image 
                         src="/ejercicio_icon.png"
@@ -472,7 +469,7 @@ const tema09 = () => {
                 </div>
                 <p className={`leading-relaxed ` + styles.parrafo}>
                 <span className="italic"> </span> Encontrar una transformacion lineal <Latex>{latexTemplate('T : \\mathbb{R} \\rightarrow  \\mathbb{R}')}</Latex> 
-                tal que <Latex>{latexTemplate('T\\left ( 1,2 \\right ) = \\left ( 3, -1 \\right ) \\ y \\ T\\left ( 0,1 \\right ) = \\left ( 1,2 \\right )')}</Latex>
+                tal que <Latex>{latexTemplate('T\\left ( 1,2 \\right ) = \\left ( 3, -1 \\right ) \\ y \\\\ T\\left ( 0,1 \\right ) = \\left ( 1,2 \\right )')}</Latex>
                 </p>
 
                 <p className={`leading-relaxed ml-8 ` + styles.parrafo}>
@@ -486,6 +483,37 @@ const tema09 = () => {
                     <Latex>{latexTemplate('$T\\left ( x,y \\right ) = x\\left ( 3,-1 \\right ) + \\left ( y-2x \\right )\\left ( 1,2 \\right ) = \\left ( x+y, 2y-5x \\right )$')}</Latex>
                     <Latex>$\therefore $</Latex> Se puede ver fácilmente que la transformación T definida como arriba es lineal y cumple las condiciones solicitadas.
                 </p>
+
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/ejercicioresuelto_icon.png"
+                        alt="Observacion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}> Ejercicio resuelto 2:</h3>
+                </div>
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                Demuestre que la funcion  es una transformacion lineal es necesario probar que conserva la suma vectorial y 
+                la multiplicacion escalar. Para tal fin sean <Latex>{latexTemplate('v = \\left ( v_1,v_2 \\right ) y \\ u = \\left ( u_1, u_2 \\right ) ')}</Latex>
+                dos vectores en <Latex>{latexTemplate('\\mathbb{R}^{2}')}</Latex> y sea c cualquier numero real entonces:
+
+                Dado que : <Latex>{latexTemplate('$u+v = \\left ( u_1,u_2 \\right ) + \\left ( v_1,v_2 \\right ) = \\left ( u_1 +v_1, u_2+v_2 \\right )$')}</Latex>
+                <Latex>{latexTemplate('$T\\left ( u+v \\right ) = T\\left ( u_1+v_1,u_2+v_2 \\right )$')}</Latex>
+                <Latex>{latexTemplate('$T\\left ( u+v \\right ) = \\left ( \\left ( u_1 + v_1 \\right ) -\\left ( u_2 + v_2 \\right ), \\left ( u_1 + v_1 \\right ) + 2\\left ( u_2 + v_2 \\right ) \\right )$')}</Latex>
+                <Latex>{latexTemplate('$T\\left ( u+v \\right ) = \\left ( \\left ( u_1 - u_2 \\right )  +\\left ( v_1 - v_2 \\right ), \\left ( u_1 + 2u_2 \\right ) + \\left ( v_1 + 2v_2 \\right ) \\right )$')}</Latex>
+                <Latex>{latexTemplate('$T\\left ( u+v \\right ) = \\left ( u_1 - u_2, u_1 + 2u_2 \\right ) + \\left ( v_1 - v_2, v_1 + 2v_2 \\right )$')}</Latex>
+                <Latex>{latexTemplate('$T\\left ( u+v \\right ) = T\\left ( u \\right ) + T\\left ( v \\right )$')}</Latex>
+                
+                luego : <Latex>{latexTemplate('$cu = c\\left ( u_1,u_2 \\right ) = \\left ( cu_1, cu_2 \\right )$')}</Latex>
+                <Latex>{latexTemplate('$T\\left ( cu \\right ) = T\\left ( u_1,u_2 \\right )$')}</Latex>
+                <Latex>{latexTemplate('$T\\left ( cu \\right ) = \\left ( cu_1 - cu_2, cu_1 + 2cu_2 \\right )$')}</Latex>
+                <Latex>{latexTemplate('$T\\left ( cu \\right ) = c\\left ( u_1 - u_2, u_1 + 2u_2 \\right )$')}</Latex>
+                <Latex>{latexTemplate('$T\\left ( cu \\right ) = cT\\left ( u \\right )$')}</Latex>
+                <Latex>{latexTemplate('\\therefore')}</Latex> Esto nos indica que{' '}
+                <Latex>{latexTemplate('T')}</Latex>  es transformacion lineal
+                </p>
+
 
                 <div className={`flex flex-row `}>
                     <Image 
@@ -549,3 +577,5 @@ const tema09 = () => {
 }
 
 export default tema09;
+
+
