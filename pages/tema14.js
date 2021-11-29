@@ -365,7 +365,7 @@ const tema14 = () => {
                         width={60}
                         height={60}
                     />
-                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Recurso Python:</h3>
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Recurso Wolfram:</h3>
                 </div>
                 
                 <div className="container mx-auto m-6 rounded-md text-gray-500">
@@ -378,6 +378,61 @@ const tema14 = () => {
                     <div className={`` + styles.caption}>
                         Recurso Wolfram para determinar si una matriz es diagonalizable mediante el proceso de descomposición de Jordan. Fuente: Tomado de <a className={styles.link} href="https://www.wolframalpha.com/widgets/view.jsp?id=951e83beaab8a6a6864e8cee51fa87d0" target="_blank">@YouMath.it</a>.
                     </div>
+                </div>
+
+                {/* POLINOMIOS CARACTERISTICOS */}
+                <h2 className={`` + styles.submainTitle}>Polinomio caracteristico</h2>
+
+
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                              
+                    Dado <Latex>{laT('A \\in M_{nxn}')}</Latex> definimos el polinomio característico
+                    de <Latex>{laT('A')}</Latex> como determinante
+                    supongamos que existe.<Latex>{LaT('P_{A}(\\lambda )=det (A-\\lambda I)')}</Latex>
+                    donde <Latex>{laT('I')}</Latex> es la matriz identidad de orden <Latex>{laT('n')}</Latex>   
+                 </p>
+                 <div className={`flex flex-row `}>
+                    <Image 
+                        src="/definition_icon.png"
+                        alt="Definicion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.defTitle}>Definición 1:</h3>
+                </div>
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                Sea <Latex>{laT('A,B \\in M_{nxn}')}</Latex> Decimos que <Latex>{laT('A \\text{ y } B')}</Latex>son semejantes si hay <Latex>{laT('M \\in M_{nxn}')}</Latex> invertible tal que <Latex>{laT('A = M^{-1}BM')}</Latex>
+                </p>
+
+                
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/ejercicio_icon.png"
+                        alt="Definicion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo 1:</h3>
+                </div>
+
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                Demuestre que si <Latex>{laT('A')}</Latex> es similar a<Latex>{laT('B')}</Latex>, entonces <Latex>{laT('B')}</Latex> es similar a <Latex>{laT('A')}</Latex>.
+                </p>
+
+                <div className="ml-8 leading-relaxed">
+                    <h4 className={` `+styles.solTitle}>Solución: </h4>
+                    <ul>
+                        <li>
+                            
+                            <p className={`leading-relaxed ` + styles.parrafo}>
+                               Existe <Latex>{laT('M \\in M_{n}')}</Latex> invertible tal que <Latex>{laT('A=M^{-1}BM')}</Latex>. Sigue eso
+                               <Latex>{laT('B=MAM^{-1}')}</Latex>. Tomando <Latex>{laT('N=M^{-1}')}</Latex>, obtenemos <Latex>{laT('B=N^{-1}AN')}</Latex>, es decir, <Latex>{laT('B')}</Latex> y
+                                semejante a <Latex>{laT('A')}</Latex>.
+                             </p>
+
+                            
+                        </li>
+                    </ul>
                 </div>
 
                 <div className={`flex flex-row `}>

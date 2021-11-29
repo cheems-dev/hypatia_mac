@@ -2,6 +2,7 @@
 
 //For next imports
 import Head from 'next/head'
+import Image from 'next/image'
 
 //For katex imports
 import 'katex/dist/katex.min.css'
@@ -88,7 +89,7 @@ const tema13 = () => {
                 <title>Hypatia - Tema 13</title>
             </Head>
             <div className="container px-8 mx-auto m-6 rounded-md shadow-xl bg-white">
-                <h1 className={`pb-4 `+ styles.titulo}>CAMBIO DE BASE</h1>
+                <h1 className={`pb-4 `+ styles.titulo}>Cambio de Base</h1>
                 {/* AQUI VA SU CONTENIDO */}
                 <br/>
                 <p className={`leading-relaxed `+styles.parrafo}>
@@ -103,7 +104,15 @@ const tema13 = () => {
                     encontrar esas coordenadas?
                 </p>
                 <br/>
-                <h3 className={`pb-4 `+ styles.subtitulo}>Definicion</h3>
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/definition_icon.png"
+                        alt="Definicion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.subtitulo}>Definicion</h3>
+                </div>
                 <p className={`leading-relaxed `+styles.parrafo}>
                     Sea <Latex>{exp26}</Latex> un espacio vectorial finitamente generado. Sean <Latex>{exp27}</Latex> y <Latex>{exp28}</Latex> las 
                     bases de <Latex>{exp26}</Latex> formadas por los vectores <Latex>{exp1}</Latex> y <Latex>{exp2}</Latex>, 
@@ -128,7 +137,16 @@ const tema13 = () => {
                     La matriz <Latex>{exp29}</Latex> son las coordenadas de un vector dado con respecto a las bases <Latex>{exp27}</Latex> y <Latex>{exp28}</Latex>.
                 </p>
                 <br/>
-                <h4 className={`pb-4 `+ styles.subtitulo}>Ejemplo 1</h4>
+
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/ejercicio_icon.png"
+                        alt="Definicion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.subtitulo}>Ejemplo 1</h3>
+                </div>
                 <p className={`leading-relaxed `+styles.parrafo}>                   
                     Consideremos la base <Latex>{exp27}</Latex> de <Latex>{exp11}</Latex> formada por los vectores <Latex>{exp23}</Latex>, <Latex>{exp24}</Latex> y <Latex>{exp25}</Latex>.
                     <br/>Consideremos también la base C formada por los vectores <Latex>{exp30}</Latex>, <Latex>{exp31}</Latex> y <Latex>{exp32}</Latex>.
@@ -160,13 +178,31 @@ const tema13 = () => {
                 Así, obtenemos
                 <Latex>{exp42}</Latex><br/>
                 </p>
-                <h6 className={`pb-4 `+ styles.subtitulo}>Proposicion 1</h6>
+
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/proposicion_icon.png"
+                        alt="Definicion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.subtitulo}>Proposicion 1</h3>
+                </div>
                 <p className={`leading-relaxed `+styles.parrafo}>
                 Sean <Latex>$B$</Latex> y <Latex>$C$</Latex> las bases de un espacio vectorial de dimensión finita <Latex>$V$</Latex>. Si <Latex>$v_B$</Latex> y <Latex>$v_C$</Latex> representan las 
                 coordenadas de un vector dado <Latex>$v$</Latex> <Latex>{exp34}</Latex> <Latex>$V$</Latex> con respecto a las bases <Latex>$B$</Latex> y <Latex>$C$</Latex>, respectivamente, y si <Latex>{exp29}</Latex> es 
                 la matriz de cambio de base de la base <Latex>$B$</Latex> a la base <Latex>$C$</Latex>, entonces <Latex>{exp64}</Latex>
                 </p>
-                <h5 className={`pb-4 `+ styles.subtitulo}>Ejemplo 2</h5>
+                
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/ejercicio_icon.png"
+                        alt="Definicion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.subtitulo}>Ejemplo 2</h3>
+                </div>
                 <p className={`leading-relaxed ` + styles.parrafo}>
                 Estableciendo que <Latex>{exp43}</Latex> <Latex>{exp4}</Latex> <Latex>{exp5}</Latex>, 
                 consideremos los vectores: <Latex>{exp44}</Latex> y <Latex>{exp45}</Latex> en <Latex>{exp46}</Latex>.
@@ -186,35 +222,60 @@ const tema13 = () => {
                 coordenadas del mismo vector con respecto a la base <Latex>$C$</Latex>, por la proposición 1 tenemos <Latex>{exp63}</Latex>
                 </p>
             <br/><br/>
-            </div>
-            
-            <div className="container px-8 mx-auto m-6 rounded-md shadow-xl bg-white">
-                <h2 className={`pb-4 `+ styles.subtitulo}>Recurso Python</h2>
+
+            <div className="container px-8 mx-auto m-6 rounded-md  bg-white">
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/recurso_icon.png"
+                        alt="Definicion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.subtitulo}>Recurso Python</h3>
+                </div>
                 <p className={`leading-relaxed `+styles.parrafo}>
                     El presente recurso en python nos permite visualizar el resultado de un cambio de base B a C.
                 </p>
                 <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@requiemm/cambiobase?embed=true"></iframe>
                 
-            </div>
-
-            <div className="container px-8 mx-auto m-6 rounded-md shadow-xl bg-white">
-                <h2 className={`pb-4 `+ styles.subtitulo}>Recurso Geogebra</h2>
-                <p className={`leading-relaxed `+styles.parrafo}>
-                    El presente recurso geogebra nos permite visualizar el procedimiento de cambio de base. En el primer panel podemos ver una base U, mientras que en la otra se logra ver una base V.
-                </p>
-                <iframe scrolling="no" title="Cambio de Base" src="https://www.geogebra.org/material/iframe/id/sYpNAKwa/width/1366/height/647/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px"> </iframe>
-                <div className={`` + styles.caption}>
-                        Recurso Goegebra que ejemplifica el cambio de la base U a la base V. Fuente: Adaptado de <a className={styles.link} href="https://www.geogebra.org/m/sYpNAKwa" target="_blank">Sergio Rubio-Pizzorno</a>.
+                <div className="container px-8 mx-auto m-6 rounded-md  bg-white">
+                
+                    <div className={`flex flex-row `}>
+                        <Image 
+                            src="/recurso_icon.png"
+                            alt="Definicion"
+                            width={60}
+                            height={60}
+                        />
+                        <h3 className={`mt-4 pb-4 `+ styles.subtitulo}>Recurso Geogebra</h3>
+                    </div>
+                    <p className={`leading-relaxed `+styles.parrafo}>
+                        El presente recurso geogebra nos permite visualizar el procedimiento de cambio de base. En el primer panel podemos ver una base U, mientras que en la otra se logra ver una base V.
+                    </p>
+                    <iframe scrolling="no" title="Cambio de Base" src="https://www.geogebra.org/material/iframe/id/sYpNAKwa/width/1366/height/647/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="900px" height="500px"> </iframe>
+                    <div className={`` + styles.caption}>
+                            Recurso Goegebra que ejemplifica el cambio de la base U a la base V. Fuente: Adaptado de <a className={styles.link} href="https://www.geogebra.org/m/sYpNAKwa" target="_blank">Sergio Rubio-Pizzorno</a>.
+                    </div>
                 </div>
-            </div>
-           
-            <h6 className={`mt-4 ` + styles.subtitulo}>Bibliografía: </h6>
+                </div>
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/biblio_icon.png"
+                        alt="Definicion"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.subtitulo}>Bibliografía: </h3>
+                </div>
 
-            <ul className={`ml-8 pb-8 ` + styles.biblio}>
-                <li>
-                    [1] Zani, S. L. (n.d.). Álgebra Linear. ICMC - USP.
-                </li>
-            </ul>
+                <ul className={`ml-8 pb-8 ` + styles.biblio}>
+                    <li>
+                        [1] Zani, S. L. (n.d.). Álgebra Linear. ICMC - USP.
+                    </li>
+                </ul>
+            </div>
+
+            
 
         </Layout>    // FALTA EL RECURSO DE PYTHON Y EL DE GEOGEBRA
     );
