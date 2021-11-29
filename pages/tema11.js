@@ -18,9 +18,9 @@ let expr1 = "$T:U \\to V$"
 let expr2 = "$B = \\left\\{u_1, u_2, ..., u_n\\right\\}$";
 let expr3 = "$G = \\left\\{v_1, v_2, ..., v_m \\right\\}$";
 let expr4 = "$$ \\left\\{\\begin{matrix} T(u_1) = \\alpha_{11}v_1+ \\alpha_{12}v_2+ ...+ \\alpha_{1m}v_m \\\\ T(u_2) = \\alpha_{21}v_1+ \\alpha_{22}v_2+ ...+ \\alpha_{2m}v_m \\\\  \\vdots \\\\ T(u_n) = \\alpha_{n1}v_1 + \\alpha_{n2}v_2+...+ \\alpha_{nm}v_m \\end{matrix} \\right.$$";
-let expr5 = "$$ [T]_{B,G}= \\begin{bmatrix}  \\alpha _{11} &  \\alpha _{21} & ... & \\alpha _{n1} \\\\" +
+let expr5 = "$$ [T]_{B,G}= \\begin{pmatrix}  \\alpha _{11} &  \\alpha _{21} & ... & \\alpha _{n1} \\\\" +
             "\\alpha _{12} &  \\alpha _{22} & ... & \\alpha _{n2} \\\\ & \\vdots \\\\ "+ 
-            "\\alpha _{1m} &  \\alpha _{2m} & ... & \\alpha _{nm} \\\\ \\end{bmatrix}$$";
+            "\\alpha _{1m} &  \\alpha _{2m} & ... & \\alpha _{nm} \\\\ \\end{pmatrix}$$";
 let expr5_1="$[T]_{B,G}$";
 let expr5_2="$[T]_{B}$";
 
@@ -28,8 +28,8 @@ let expr6="$T: \\R^3 \\to \\R^2$";
 let expr6_1="$T(x,y,z) = (x+y,x-1)$";
 let expr6_2="$$\\begin{align*} T(1,0,0)=(1+0,1-0) &= (1,1)=1(1,0)+1(0,1) \\\\ T(0,1,0) = (0+1,0-0) &= (1,0) = 1(1,0)+0(0,1) \\\\"+
             "T(0,0,1) = (0+0,0-1) &= (0,-1) = 0(1,0)-1(0,1) \\\\ \\end{align*}$$";
-let expr6_3="$$ [T]_{B,G}= \\begin{bmatrix}  1 & 1 & 0 \\\\" +
-"1 &  0 & -1 \\\\ \\end{bmatrix}$$";
+let expr6_3="$$ [T]_{B,G}= \\begin{pmatrix}  1 & 1 & 0 \\\\" +
+"1 &  0 & -1 \\\\ \\end{pmatrix}$$";
 
 let expr7="$T: \\mathcal{P_2}(\\R) \\to \\mathcal{P_2}(\\R)$";
 let expr7_1="$T(p(x)) =(x+1)p(x), \\forall p(x) \\in \\mathcal{P_2}(\\R)$";
@@ -37,13 +37,13 @@ let expr7_2="$B = \\left\\{1,(x-1),(x-1)^2\\right\\} \\text{ de } \\mathcal{P_2}
                 "G = \\left\\{1,x,x^2,x^3\\right\\} \\text{ de } \\mathcal{P_3}(\\R)$";
 let expr7_3="$$\\begin{align*} T(1) &=(x+1)1 = (x+1)=1+1x+0x^2+1x^3 \\\\ T(x-1) &= (x+1)(x-1) = (x^2-1) = -1+0x+1x^2+0x^3 \\\\"+
 "T((x-1)^2) &= (x+1)(x-1)^2 = (x^3-x^2-x+1) = 1-1x-1x^2+1x^3 \\\\ \\end{align*}$$"; 
-let expr7_4="$$ [T]_{B,G}= \\begin{bmatrix}  1 & -1 & 1 \\\\ 1 &  0 & -1 \\\\ 0 & 1 &- 1 \\\\ 0 & 0 & 1 \\\\ \\end{bmatrix}$$";
+let expr7_4="$$ [T]_{B,G}= \\begin{pmatrix}  1 & -1 & 1 \\\\ 1 &  0 & -1 \\\\ 0 & 1 &- 1 \\\\ 0 & 0 & 1 \\\\ \\end{pmatrix}$$";
 
 let expr8="$$[T]_{B,G}=0$$";
 
 let expr9="$T: \\mathcal{P_2}(\\R) \\to \\R^3$";
-let expr9_1="$ [T]_{B,G}= \\begin{bmatrix}  1 & 1 & 2 \\\\" +
-"1 &  -1 & -0 \\\\ -1 & 1 & 2 \\\\ \\end{bmatrix}$";
+let expr9_1="$ [T]_{B,G}= \\begin{pmatrix}  1 & 1 & 2 \\\\" +
+"1 &  -1 & -0 \\\\ -1 & 1 & 2 \\\\ \\end{pmatrix}$";
 let expr9_2="$B=\\left\\{1,1+x,1+x^2\\right\\} \\text{ y } G=\\left\\{(1,1,0),(0,1,0),(0,0,1)\\right\\}$";
 
 let expr10="$$\\begin{align*} T(1)=1(1,1,0) + 1(0,1,0) - 1(0,0,1) &= (1,2,-1) \\\\ T(1+x)=1(1,1,0) - 1(0,1,0) + 1(0,0,1) &= (1,0,1) \\\\"+
