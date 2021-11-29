@@ -234,18 +234,28 @@ const tema15 = () => {
                 </div>
 
                 <div>
-                <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@requiemm/eigensystem?embed=true"></iframe>
+                {/* <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@requiemm/eigensystem?embed=true"></iframe> */}
+                </div>
+
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/recurso_icon.png"
+                        alt="Recursos académicos"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Recurso geogebra:</h3>
                 </div>
                 
                 <div className="container mx-auto m-6 rounded-md text-gray-500">
                     <p className={`leading-relaxed ` + styles.parrafo}>
-                        El presente recurso geogebra nos permite visualizar la forma de desempeño de un isomorfismo. En el primer panel podemos ver un espacio vectorial de dimensión tres, mientras que en la otra se alcanza a ver una transformación de los puntos a una de dimensión dos.
+                        El presente recurso Wolfram Widget nos permite determinar el proceso de diagonalización de una matriz, ingresa la matriz en la casilla de entrada y el programa realiza el proceso de descomposición de Jordan.
                     </p>
 
                     <script type="text/javascript" id="WolframAlphaScript951e83beaab8a6a6864e8cee51fa87d0" src="//www.wolframalpha.com/widget/widget.jsp?id=951e83beaab8a6a6864e8cee51fa87d0"></script>
 
                     <div className={`` + styles.caption}>
-                        Recurso Goegebra que ejemplifica el desempeño de dos espacios vectoriales con un punto por medio de un isomorfismo donde se tiene que es inyectiva y sobreyectiva. Fuente: Adaptado de <a className={styles.link} href="https://www.geogebra.org/m/q4w9cetk" target="_blank">Elielzer Nuayed</a>.
+                        Recurso Wolfram para determinar si una matriz es diagonalizable mediante el proceso de descomposición de Jordan. Fuente: Tomado de <a className={styles.link} href="https://www.wolframalpha.com/widgets/view.jsp?id=951e83beaab8a6a6864e8cee51fa87d0" target="_blank">@YouMath.it</a>.
                     </div>
                 </div>
 
