@@ -14,6 +14,13 @@ import styles from './tema12.module.css'
 
 
 //Vars, functions and consts
+function laTemp(text) {
+    return `$${text}$`
+}
+function LaTemp(text) {
+    return `$$${text}$$`
+}
+
 
 let expr2 = "$\\mathbb{K}$"
 let expr3 = "$$dim_{\\mathbb{K}} U = dim_{\\mathbb{K}} V $$"
@@ -31,7 +38,7 @@ let expr14 = "$$Ker(T) = \\left\\{ (x,y,z) \\in \\mathbb{R}^3 : T(x,y,z) = (0,0,
 let expr15 = "$$\\Rightarrow y=x, z=x \\Rightarrow Ker(T) = \\left\\{ (x,x,x) : x \\in \\mathbb{R} \\right\\} \\\\ \\Rightarrow Ker(T) = [(1,1,1)] \\neq \\left\\{ (0,0,0) \\right\\} \\\\ \\Rightarrow T \\text{ no es inyectiva, por lo tanto no es automorfismo}$$"
 
 let expr16 = "$F: U \\rightarrow V$"
-let expr17 = "$v \\in V, \\exists ! u_{v} \in U$"
+let expr17 = "$v \\in V, \\exists ! u_{v} \\in U$"
 let expr18 = "$F(u_{v}) = v$"
 let expr19 = "$G: V \\rightarrow U$"
 let expr20 = "$$ G(v) = u_{v}$$"
@@ -40,6 +47,12 @@ let expr22 = "$F^{-1} : V \\rightarrow U$"
 let expr23 = "$\\mathbb{K}$"
 let expr24 = "$n \\geq 1 \\text{ y } T: U \\rightarrow V$"
 let expr25 = "$\\mathbb{K} ^ {n}$"
+let expr26 = "$F: \\mathbb{R}^3  \\rightarrow \\mathbb{R}^3 \\text{, con } F(x,y,z) = (x-3y-2z, y-4z, -z)$"
+let expr27 = "$B = \\left \\{ (1,0,0), (0,1,0), (0,0,1) \\right \\}$"
+let expr28 = "$$ F(1,0,0) = (1,0,0) \\\\ F(0,1,0) = (-3,1,0) \\\\ F(0,0,1) = (-2,-4,-1) $$"
+
+let expr29 = "$$ [F]_{B} = \\begin{bmatrix} 1 & -3 & -2\\\\  0 & 1 & -4\\\\  0 & 0 & 1 \\end{bmatrix}$$"
+let expr30 = "$[F^{-1}]_{B} = [F]_{B} ^{-1}$"
 
 const tema12 = () => {
     return (
@@ -140,7 +153,7 @@ const tema12 = () => {
                         width={60}
                         height={60}
                     />
-                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplos:</h3>
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo 2:</h3>
                 </div>
 
                 
@@ -198,7 +211,7 @@ const tema12 = () => {
                         width={60}
                         height={60}
                     />
-                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo:</h3>
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo 3:</h3>
                 </div>
                 
                 <p className={`leading-relaxed ` + styles.parrafo}>
@@ -243,7 +256,17 @@ const tema12 = () => {
                     Llamaremos a <Latex>$G$</Latex> función inversa de <Latex>$F$</Latex>.
                 </p>
 
-                <h3 className={`mt-4 pb-4 `+ styles.defTitle}>Proposición:</h3>
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/proposicion_icon.png"
+                        alt="Proposición"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.defTitle}>Proposición:</h3>
+                </div>
+
+                
                 <p className={`leading-relaxed ` + styles.parrafo}>
                     La inversa de una transformación lineal biyectiva es una transformación lineal también.
                 </p>
@@ -253,7 +276,16 @@ const tema12 = () => {
                     Denotemos la inversa de <Latex>{expr16}</Latex> por <Latex>{expr22}</Latex>.
                 </p>
 
-                <h3 className={`mt-4 pb-4 `+ styles.defTitle}>Proposición:</h3>
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/proposicion_icon.png"
+                        alt="Proposición"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.defTitle}>Proposición:</h3>
+                </div>
+
                 <p className={`leading-relaxed ` + styles.parrafo}>
                     Sean <Latex>$U$</Latex> y <Latex>$V$</Latex> dos espacios vectoriales sobre <Latex>{expr23}</Latex> con la misma dimensión finita <Latex>{expr24}</Latex> una transformación lineal. Entonces las siguientes afirmaciones son equivalentes:
 
@@ -275,10 +307,71 @@ const tema12 = () => {
                     Dos espacios vectoriales con la misma dimensión finita son isomorfos.
                 </p>
 
-                <h3 className={`mt-4 pb-4 `+ styles.defTitle}>Corolario:</h3>
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/corolario_icon.png"
+                        alt="Corolario"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 `+ styles.defTitle}>Corolario:</h3>
+                </div>
+
+                
                 <p className={`leading-relaxed ` + styles.parrafo}>
                     Todo <Latex>{expr23}</Latex>-espacio vectorial (espacio vectorial sobre <Latex>{expr23}</Latex>) de dimensión <Latex>$n \geq 1$</Latex> es isomorfo a <Latex>{expr25}</Latex>.
                 </p>
+
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/ejercicio_icon.png"
+                        alt="Ejercicios"
+                        width={60}
+                        height={60}
+                    />
+                    <h3 className={`mt-4 pb-4 leading-relaxed `+ styles.defTitle}>Ejemplo 4:</h3>
+                </div>
+                <p className={`leading-relaxed ` + styles.parrafo}>
+                    Muestre que la transformación lineal <Latex>{expr26}</Latex> es invertible y determine su transformación inversa.
+                </p>
+
+                <div className="ml-8 leading-relaxed">
+                    <h4 className={` `+styles.solTitle}>Solución: </h4>
+                    <ul>
+                        <li>
+                            <p className={`leading-relaxed ` + styles.parrafo}>
+                            <span className="italic">i. </span> Para determinar que la transformación es invertible podemos usar la característica de que son isomorfos, esto debido a que <Latex>$dim U = dim V$</Latex> lo que significa que es biyectiva, <span className="font-bold">por ende invertible</span>.
+                            </p>
+                        </li>
+                        <li>
+                            <p className={`leading-relaxed ` + styles.parrafo}>
+                            <span className="italic">ii. </span> Para determinar la transformación inversa primero hallaremos la matriz de la transformación con base canónica <Latex>{expr27}</Latex>.
+                            
+                            <Latex>{expr28}</Latex>
+                            <Latex>{expr29}</Latex>
+                            
+                            Podemos hacer uso de la propiedad de <Latex>{expr30}</Latex>. Es por ello que determinamos: 
+                            
+                            <Latex>{LaTemp('[F]_{B} ^{-1} = \\begin{bmatrix} 0 & 3 & 14\\\\  0 & 1 & 4\\\\  0 & 0 & 1 \\end{bmatrix}')}</Latex>
+
+                            Así sabemos que en términos del isomorfismo <Latex>{laTemp('F^{-1}')}</Latex> la base canónica <Latex>{laTemp('B')}</Latex> se puede expresar como:
+
+                            <Latex>{LaTemp('F^{-1} (1,0,0) = (1,0,0) \\\\ F^{-1} (0,1,0) = (3,1,0)\\\\ F^{-1} (0,0,1) = (14,4,1)')}</Latex>
+
+                            Es así que cualquier <Latex>{laTemp('(x,y,z) \\in \\mathbb{R}^3')}</Latex> puede ser expresado como:
+
+                            <Latex>{LaTemp('(x,y,z) = x(1,0,0) + y(0,1,0) + z(0,0,1)')}</Latex>
+
+                            <Latex>{LaTemp('F^{-1}(x,y,z) = xF^{-1}(1,0,0) + yF^{-1}(0,1,0) + zF^{-1}(0,0,1)')}</Latex>
+
+                            <Latex>{LaTemp('F^{-1}(x,y,z) = x(1,0,0) + y(3,1,0) + z(14,4,1)')}</Latex>
+
+                            <Latex>{LaTemp(' \\therefore F^{-1}(x,y,z) = (x+3y+14z, y+4z, z)')}</Latex>
+
+                            </p>
+                        </li>
+                    </ul>
+                </div>
 
                 <div className={`flex flex-row `}>
                     <Image 
@@ -297,10 +390,31 @@ const tema12 = () => {
 
                     <iframe scrolling="no" title="Isomorfismos" src="https://www.geogebra.org/material/iframe/id/phdhwdnf/width/1040/height/1135/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/true/rc/false/ld/false/sdz/true/ctl/false" width="1040px" height="1135px"> </iframe>
 
-                    <div className="caption">
-                        Recurso Goegebra adaptado de <a href="https://www.geogebra.org/m/q4w9cetk">Elielzer Nuayed</a>.
+                    <div className={`` + styles.caption}>
+                        Recurso Goegebra que ejemplifica el desempeño de dos espacios vectoriales con un punto por medio de un isomorfismo donde se tiene que es inyectiva y sobreyectiva. Fuente: Adaptado de <a className={styles.link} href="https://www.geogebra.org/m/q4w9cetk">Elielzer Nuayed</a>.
                     </div>
                 </div>
+
+                <div className={`flex flex-row `}>
+                    <Image 
+                        src="/biblio_icon.png"
+                        alt="Bibliografía"
+                        width={60}
+                        height={60}
+                    />
+                    <h2 className={`mt-4 ` + styles.submainTitle}>Bibliografía: </h2>
+                </div>
+
+                <ul className={`ml-8 pb-8 ` + styles.biblio}>
+                    <li>
+                        [1] Coelho, F. U. (2001). Curso de Álgebra Linear, Um Vol. 34. Edusp.
+                    </li>
+                    <li className="mb-4">
+                        [2] Zani, S. L. (n.d.). Álgebra Linear. ICMC - USP.
+                    </li>
+                </ul>
+
+                
 
             </div>
         </Layout>        
