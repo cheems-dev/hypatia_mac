@@ -28,6 +28,29 @@
     font-family: 'Roboto Slab', serif;
 }
 
+.defTitle {
+    font-size: 19px;
+    font-weight: bold;
+    color: #e45050;
+    font-family: 'Roboto Slab', serif;
+}
+
+
+.obsTitle{
+    color: #88ff00; 
+}
+
+.ejemTitle{
+    color: #ffee00;
+}
+
+.solTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #1e58a3;
+    font-family: 'Roboto Slab', serif;
+}
+
 .parrafo {
     font-family: 'Nunito', sans-serif;
     margin-bottom: 8px;
