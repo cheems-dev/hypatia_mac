@@ -94,7 +94,7 @@ const tema10 = () => {
               {' '}
               El conjunto{' '}
               <Latex>
-                {latexTemplate('Ker(T) = { u \\in U: T(u) = v \\subset U }')}
+                {latexTemplate('Ker(T) = \\left \\{ u \\in U: T(u) = 0 \\subset U \\right \\}')}
               </Latex>{' '}
               es llamado núcleo de T.
             </li>
@@ -103,7 +103,7 @@ const tema10 = () => {
               El conjunto{' '}
               <Latex>
                 {latexTemplate(
-                  'Im(T) = { v \\in V: u \\in U con  T(u) = v \\subset V }'
+                  'Im(T) = \\left \\{ v \\in V: \\exists u \\in U \\text{ con }  T(u) = v \\subset V \\right \\}'
                 )}
               </Latex>{' '}
               es llamado imagen de T.
@@ -420,13 +420,13 @@ const tema10 = () => {
           </div> 
           Sea <Latex>{latexTemplate('T: U \\rightarrow V')}</Latex> una
           transformación lineal. T es inyecta si y solo si{' '}
-          <Latex>{latexTemplate('N(T) = \\{0\\}.')}</Latex>.
+          <Latex>{latexTemplate('Ker (T) = \\{0\\}.')}</Latex>.
           <h3 className={`pl-4 pb-4 ` + styles.defTitle}>Demostración:</h3>T es
           inyectiva si y solo si la ecuación{' '}
           <Latex>{latexTemplate('T(u) = 0')}</Latex> tiene{' '}
           <Latex>{latexTemplate('u = 0')}</Latex> como única solución. Esto es
           lo mismo que decir que el conjunto{' '}
-          <Latex>{latexTemplate('N(T)')}</Latex> está formado solo porel
+          <Latex>{latexTemplate('Ker (T)')}</Latex> está formado solo porel
           elemento 0.
           {/* Proposición 8.30  */}
           {/* Ejercicio 8.31  */}
@@ -442,17 +442,17 @@ const tema10 = () => {
           </div>
           Sea <Latex>{latexTemplate('T \\in L(U)')}</Latex> . Muestra que{' '}
           <Latex>{latexTemplate('T_{2} = 0')}</Latex> si y solo si{' '}
-          <Latex>{latexTemplate('T (U) \\subset N (T)')}</Latex>. Resolución:
+          <Latex>{latexTemplate('T (U) \\subset Ker (T)')}</Latex>. Resolución:
           <br />
           Suponga que <Latex>{latexTemplate('T_{2} = 0')}</Latex>. Si
           <Latex>{latexTemplate('v \\in T(U)')}</Latex> entonces hay{' '}
           <Latex>{latexTemplate('u \\in U')}</Latex> tal que{' '}
           <Latex>{latexTemplate('v \\in T(u)')}</Latex> y por lo tanto{' '}
           <Latex>{latexTemplate('T(v) = T_{2}(u) = 0')}</Latex>. Por tanto,
-          <Latex>{latexTemplate('v \\in N(T)')}</Latex> . Ahora suponga que{' '}
+          <Latex>{latexTemplate('v \\in Ker (T)')}</Latex> . Ahora suponga que{' '}
           <Latex>{latexTemplate('T(U) \\subset N(T)')}</Latex>. Dado{' '}
           <Latex>{latexTemplate('u \\in U')}</Latex>, como{' '}
-          <Latex>{latexTemplate('T(u) \\in T(U) \\subset N(T)')}</Latex> ,
+          <Latex>{latexTemplate('T(u) \\in T(U) \\subset Ker(T)')}</Latex> ,
           tenemos <Latex>{latexTemplate('T_{2}(u) = T(T(u)) = 0')}</Latex>.
           {/* Ejercicio 8.31  */}
           {/* Ejercicio 8.32  */}
